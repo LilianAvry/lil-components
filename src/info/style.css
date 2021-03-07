@@ -1,11 +1,11 @@
-.lil-info-block {
+.lil-info {
     box-shadow: 0 0 8px #DDDDDD;
 }
 
-.lil-info-block__secondary {
+.lil-info__secondary {
     text-align: center;
 }
 
-.lil-info-block a {
+.lil-info a {
     margin-bottom: 1rem;
 }
