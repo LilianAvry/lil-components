@@ -2,10 +2,10 @@
     box-shadow: 0 0 8px #DDDDDD;
 }
 
-.lil-info__secondary {
+.lil-info.lil-info__secondary {
     text-align: center;
 }
 
-.lil-info a {
+.lil-info a.lil-info_link {
     margin-bottom: 1rem;
 }
