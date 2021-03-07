@@ -1,0 +1,18 @@
+.lil-social .row .column a.button-secondary {
+    color: #FFF;
+}
+
+a.button-secondary.lil-social_button__facebook {
+    background-color: #483D8B;
+    border-color: #483D8B;
+}
+
+a.button-secondary.lil-social_button__twitter {
+    background-color: #6BA4FF;
+    border-color: #6BA4FF;
+}
+
+a.button-secondary.lil-social_button__instagram {
+    background-color: #CD5C5C;
+    border-color: #CD5C5C;
+}
