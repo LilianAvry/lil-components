@@ -1,0 +1,17 @@
+.lil-pricing .card-title {
+    text-align: center;
+    background-color: #EEE;
+}
+
+.lil-pricing .card-actions {
+    text-align: center;
+}
+
+.lil-pricing_features {
+    margin: 1rem;
+}
+
+.lil-pricing_price {
+    font-size: 2.2rem;
+    text-align: center;
+}
