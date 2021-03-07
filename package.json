@@ -1,0 +1,17 @@
+{
+  "name": "lil-components",
+  "version": "1.0.0",
+  "description": "A set of nice components built with Lil.css",
+  "main": "index.css",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "lil",
+    "css",
+    "web",
+    "components"
+  ],
+  "author": "Lilian Avry Chrétienne",
+  "license": "MIT"
+}
