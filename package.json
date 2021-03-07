@@ -4,11 +4,19 @@
   "description": "A set of nice components built with Lil.css",
   "main": "index.css",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "node index.js"
   },
   "keywords": [
-    "lil",
+    "small",
+    "lite",
+    "light",
+    "lightweight",
     "css",
+    "style",
+    "sheet",
+    "stylesheet",
+    "framework",
+    "lil",
     "web",
     "components"
   ],
