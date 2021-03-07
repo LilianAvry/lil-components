@@ -1,0 +1,7 @@
+.lil-headline {
+    border-bottom: 1px solid #DDD;
+}
+
+.lil-headline .lil-headline_title {
+    margin: 0;
+}
