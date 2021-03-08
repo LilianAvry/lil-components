@@ -1,0 +1,25 @@
+@import "../colors/style.css";
+
+.lil-stat {
+    width: 100%;
+    box-sizing: border-box;
+    display: inline-block;
+    background: #FFF;
+    border: 1px solid #DDD;
+    border-radius: 2px;
+    padding: .5rem;
+}
+
+.lil-stat_value {
+    margin: 0;
+    color: var(--black);
+    font-size: 1.8rem;
+    font-weight: normal;
+}
+.lil-stat_label {
+    margin-top:.5rem;
+    margin-bottom: 0;
+    color: var(--grey);
+    font-size: 1rem;
+    font-weight: lighter;
+}
