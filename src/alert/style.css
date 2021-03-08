@@ -1,0 +1,24 @@
+@import "../colors/style.css";
+
+div[class^="lil-alert"] {
+    color: #FFF;
+    width: 100%;
+    padding: .5rem;
+}
+.lil-alert__info { background-color: var(--info); }
+.lil-alert__success { background-color: var(--success); }
+.lil-alert__warning { background-color: var(--warning); }
+.lil-alert__danger { background-color: var(--danger); }
+
+.lil-alert_title {
+    margin: 0;
+    padding-bottom: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: normal;
+}
+
+.lil-alert_message {
+    margin: 0;
+    font-size: .9rem;
+    font-weight: lighter;
+}
