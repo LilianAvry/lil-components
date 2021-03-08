@@ -1,14 +1,228 @@
+/* Colors -------------------------------- */
+* {
+    --black: #1a1a1a;
+    --grey: #BBB;
+    --info: #599cff;
+    --info-dark: #0d6efd;
+    --success: #63c780;
+    --success-dark: #50a368;
+    --warning: #e6a545;
+    --warning-dark: #c98a2c;
+    --danger: #cc5c5c;
+    --danger-dark: #b84b4b;
+}
+
+.text__white { color: #FFF; }
+.text__black { color: var(--black)}
+.text__info { color: var(--info); }
+.text__success { color: var(--success); }
+.text__warning { color: var(--warning); }
+.text__danger { color: var(--danger); }
+
+.background__info { background-color: var(--info); }
+.background__success { background-color: var(--success); }
+.background__warning { background-color: var(--warning); }
+.background__danger { background-color: var(--danger); }
+.background__info-dark { background-color: var(--info-dark); }
+.background__success-dark { background-color: var(--success-dark); }
+.background__warning-dark { background-color: var(--warning-dark); }
+.background__danger-dark { background-color: var(--danger-dark); }
+
+/* Buttons -------------------------------- */
+@import "../colors/style.css";
+
+a[class^="button"].button-info,
+button.button-info,
+input[type="submit"].button-info,
+input[type="reset"].button-info,
+input[type="button"].button-info {
+    color: white;
+    background-color: var(--info);
+    border-color: var(--info);
+}
+
+a[class^="button"].button-info:hover,
+button.button-info:hover,
+input[type="submit"].button-info:hover,
+input[type="reset"].button-info:hover,
+input[type="button"].button-info:hover,
+a[class^="button"].button-info:focus,
+button.button-info:focus,
+input[type="submit"].button-info:focus,
+input[type="reset"].button-info:focus,
+input[type="button"].button-info:focus {
+    background-color: var(--info-dark);
+    border-color: var(--info-dark);
+}
+
+a[class^="button"].button-success,
+button.button-success,
+input[type="submit"].button-success,
+input[type="reset"].button-success,
+input[type="button"].button-success {
+    color: white;
+    background-color: var(--success);
+    border-color: var(--success);
+}
+
+a[class^="button"].button-success:hover,
+button.button-success:hover,
+input[type="submit"].button-success:hover,
+input[type="reset"].button-success:hover,
+input[type="button"].button-success:hover,
+a[class^="button"].button-success:focus,
+button.button-success:focus,
+input[type="submit"].button-success:focus,
+input[type="reset"].button-success:focus,
+input[type="button"].button-success:focus {
+    background-color: var(--success-dark);
+    border-color: var(--success-dark);
+}
+
+a[class^="button"].button-warning,
+button.button-warning,
+input[type="submit"].button-warning,
+input[type="reset"].button-warning,
+input[type="button"].button-warning {
+    color: white;
+    background-color: var(--warning);
+    border-color: var(--warning);
+}
+
+a[class^="button"].button-warning:hover,
+button.button-warning:hover,
+input[type="submit"].button-warning:hover,
+input[type="reset"].button-warning:hover,
+input[type="button"].button-warning:hover,
+a[class^="button"].button-warning:focus,
+button.button-warning:focus,
+input[type="submit"].button-warning:focus,
+input[type="reset"].button-warning:focus,
+input[type="button"].button-warning:focus {
+    background-color: var(--warning-dark);
+    border-color: var(--warning-dark);
+}
+
+a[class^="button"].button-danger,
+button.button-danger,
+input[type="submit"].button-danger,
+input[type="reset"].button-danger,
+input[type="button"].button-danger {
+    color: white;
+    background-color: var(--danger);
+    border-color: var(--danger);
+}
+
+a[class^="button"].button-danger:hover,
+button.button-danger:hover,
+input[type="submit"].button-danger:hover,
+input[type="reset"].button-danger:hover,
+input[type="button"].button-danger:hover,
+a[class^="button"].button-danger:focus,
+button.button-danger:focus,
+input[type="submit"].button-danger:focus,
+input[type="reset"].button-danger:focus,
+input[type="button"].button-danger:focus {
+    background-color: var(--danger-dark);
+    border-color: var(--danger-dark);
+}
+
+/* Alert -------------------------------- */
+@import "../colors/style.css";
+
+div[class^="lil-alert"] {
+    color: #FFF;
+    width: 100%;
+    padding: .5rem;
+}
+.lil-alert__info { background-color: var(--info); }
+.lil-alert__success { background-color: var(--success); }
+.lil-alert__warning { background-color: var(--warning); }
+.lil-alert__danger { background-color: var(--danger); }
+
+.lil-alert_title {
+    margin: 0;
+    padding-bottom: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: normal;
+}
+
+.lil-alert_message {
+    margin: 0;
+    font-size: .9rem;
+    font-weight: lighter;
+}
+
+/* Headline -------------------------------- */
+.lil-headline {
+    border-bottom: 1px solid #DDD;
+}
+
+.lil-headline .lil-headline_title {
+    margin: 0;
+}
+
 /* Info -------------------------------- */
 .lil-info {
     box-shadow: 0 0 8px #DDDDDD;
 }
 
-.lil-info__secondary {
+.lil-info.lil-info__secondary {
     text-align: center;
 }
 
-.lil-info a {
+.lil-info a.lil-info_link {
     margin-bottom: 1rem;
+}
+
+/* Stat -------------------------------- */
+@import "../colors/style.css";
+
+.lil-stat {
+    width: 100%;
+    box-sizing: border-box;
+    display: inline-block;
+    background: #FFF;
+    border: 1px solid #DDD;
+    border-radius: 2px;
+    padding: .5rem;
+}
+
+.lil-stat_value {
+    margin: 0;
+    color: var(--black);
+    font-size: 1.8rem;
+    font-weight: normal;
+}
+.lil-stat_label {
+    margin-top:.5rem;
+    margin-bottom: 0;
+    color: var(--grey);
+    font-size: 1rem;
+    font-weight: lighter;
+}
+
+/* Pricing -------------------------------- */
+.lil-pricing .lil-pricing_title {
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: normal;
+    margin: 0;
+    padding: 1rem 0;
+    background-color: #EEE;
+}
+
+.lil-pricing .card-actions {
+    text-align: center;
+}
+
+.lil-pricing_features {
+    margin: 1rem;
+}
+
+.lil-pricing_price {
+    font-size: 2.2rem;
+    text-align: center;
 }
 
 /* Social -------------------------------- */
