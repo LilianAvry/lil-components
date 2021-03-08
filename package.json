@@ -21,5 +21,8 @@
     "components"
   ],
   "author": "Lilian Avry Chrétienne",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "@lilianavry/lil-css": "^1.0.0-beta.0"
+  }
 }
