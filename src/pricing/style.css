@@ -1,5 +1,9 @@
-.lil-pricing .card-title {
+.lil-pricing .lil-pricing_title {
     text-align: center;
+    font-size: 1.4rem;
+    font-weight: normal;
+    margin: 0;
+    padding: 1rem 0;
     background-color: #EEE;
 }
 
