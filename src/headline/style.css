@@ -2,6 +2,13 @@
     border-bottom: 1px solid #DDD;
 }
 
-.lil-headline .lil-headline_title {
+.lil-headline h1,
+.lil-headline h2,
+.lil-headline h3,
+.lil-headline h4,
+.lil-headline h5,
+.lil-headline h6 {
     margin: 0;
+    font-size: 1.6rem;
+    font-weight: normal;
 }

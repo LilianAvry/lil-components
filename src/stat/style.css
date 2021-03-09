@@ -10,13 +10,13 @@
     padding: .5rem;
 }
 
-.lil-stat_value {
+.lil-stat-value {
     margin: 0;
     color: var(--black);
     font-size: 1.8rem;
     font-weight: normal;
 }
-.lil-stat_label {
+.lil-stat-label {
     margin-top:.5rem;
     margin-bottom: 0;
     color: var(--grey);

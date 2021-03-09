@@ -11,18 +11,18 @@
     --danger-dark: #b84b4b;
 }
 
-.text__white { color: #FFF; }
-.text__black { color: var(--black)}
-.text__info { color: var(--info); }
-.text__success { color: var(--success); }
-.text__warning { color: var(--warning); }
-.text__danger { color: var(--danger); }
+.text-white { color: #FFF; }
+.text-black { color: var(--black)}
+.text-info { color: var(--info); }
+.text-success { color: var(--success); }
+.text-warning { color: var(--warning); }
+.text-danger { color: var(--danger); }
 
-.background__info { background-color: var(--info); }
-.background__success { background-color: var(--success); }
-.background__warning { background-color: var(--warning); }
-.background__danger { background-color: var(--danger); }
-.background__info-dark { background-color: var(--info-dark); }
-.background__success-dark { background-color: var(--success-dark); }
-.background__warning-dark { background-color: var(--warning-dark); }
-.background__danger-dark { background-color: var(--danger-dark); }
+.background-info { background-color: var(--info); }
+.background-success { background-color: var(--success); }
+.background-warning { background-color: var(--warning); }
+.background-danger { background-color: var(--danger); }
+.background-info-dark { background-color: var(--info-dark); }
+.background-success-dark { background-color: var(--success-dark); }
+.background-warning-dark { background-color: var(--warning-dark); }
+.background-danger-dark { background-color: var(--danger-dark); }
