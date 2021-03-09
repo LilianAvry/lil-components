@@ -14,7 +14,7 @@ function read (name, index) {
   fs.appendFileSync(lilPath, data);
 }
 
-const components = ['Colors', 'Buttons', 'Alert', 'Headline', 'Info', 'Stat', 'Pricing', 'Social'];
+const components = ['Colors', 'Buttons', 'Social', 'Alert', 'Chip', 'Hero', 'Headline', 'Info', 'Article', 'Stat', 'Pricing', 'Newsletter', 'Login'];
 
 for (let i = 0; i < components.length; i++) {
   read(components[i], i)
