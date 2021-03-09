@@ -7,7 +7,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     background: white;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.14);
+    border: 1px solid #DDD;
     border-radius: 2px;
 }
 
