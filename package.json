@@ -1,7 +1,7 @@
 {
-  "name": "lil-ui",
+  "name": "petit-ui",
   "version": "1.0.0",
-  "description": "A set of nice components built with Lil.css",
+  "description": "A set of nice components built with petit.css",
   "main": "index.css",
   "scripts": {
     "build": "node index.js"
