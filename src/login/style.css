@@ -1,0 +1,23 @@
+@import "../colors/style.css";
+@import "../buttons/style.css";
+
+.login {
+    width: 100%;
+    box-sizing: border-box;
+    display: inline-block;
+    background: #FFF;
+    border: 1px solid #DDD;
+    border-radius: 2px;
+    padding: 1rem;
+}
+
+.login h1 {
+    text-align: center;
+    color: var(--black);
+    font-size: 1.8rem;
+    font-weight: normal;
+}
+
+.login input[type="submit"] {
+    text-align: center;
+}

@@ -1,0 +1,403 @@
+/* Colors -------------------------------- */
+* {
+    --black: #1a1a1a;
+    --grey: #BBB;
+    --info: #599cff;
+    --info-dark: #0d6efd;
+    --success: #63c780;
+    --success-dark: #50a368;
+    --warning: #e6a545;
+    --warning-dark: #c98a2c;
+    --danger: #cc5c5c;
+    --danger-dark: #b84b4b;
+}
+
+.text-white { color: #FFF; }
+.text-black { color: var(--black)}
+.text-info { color: var(--info); }
+.text-success { color: var(--success); }
+.text-warning { color: var(--warning); }
+.text-danger { color: var(--danger); }
+
+.background-info { background-color: var(--info); }
+.background-success { background-color: var(--success); }
+.background-warning { background-color: var(--warning); }
+.background-danger { background-color: var(--danger); }
+.background-info-dark { background-color: var(--info-dark); }
+.background-success-dark { background-color: var(--success-dark); }
+.background-warning-dark { background-color: var(--warning-dark); }
+.background-danger-dark { background-color: var(--danger-dark); }
+
+/* Buttons -------------------------------- */
+
+a[class^="button"].button-info,
+button.button-info,
+input[type="submit"].button-info,
+input[type="reset"].button-info,
+input[type="button"].button-info {
+    color: white;
+    background-color: var(--info);
+    border-color: var(--info);
+}
+
+a[class^="button"].button-info:hover,
+button.button-info:hover,
+input[type="submit"].button-info:hover,
+input[type="reset"].button-info:hover,
+input[type="button"].button-info:hover,
+a[class^="button"].button-info:focus,
+button.button-info:focus,
+input[type="submit"].button-info:focus,
+input[type="reset"].button-info:focus,
+input[type="button"].button-info:focus {
+    background-color: var(--info-dark);
+    border-color: var(--info-dark);
+}
+
+a[class^="button"].button-success,
+button.button-success,
+input[type="submit"].button-success,
+input[type="reset"].button-success,
+input[type="button"].button-success {
+    color: white;
+    background-color: var(--success);
+    border-color: var(--success);
+}
+
+a[class^="button"].button-success:hover,
+button.button-success:hover,
+input[type="submit"].button-success:hover,
+input[type="reset"].button-success:hover,
+input[type="button"].button-success:hover,
+a[class^="button"].button-success:focus,
+button.button-success:focus,
+input[type="submit"].button-success:focus,
+input[type="reset"].button-success:focus,
+input[type="button"].button-success:focus {
+    background-color: var(--success-dark);
+    border-color: var(--success-dark);
+}
+
+a[class^="button"].button-warning,
+button.button-warning,
+input[type="submit"].button-warning,
+input[type="reset"].button-warning,
+input[type="button"].button-warning {
+    color: white;
+    background-color: var(--warning);
+    border-color: var(--warning);
+}
+
+a[class^="button"].button-warning:hover,
+button.button-warning:hover,
+input[type="submit"].button-warning:hover,
+input[type="reset"].button-warning:hover,
+input[type="button"].button-warning:hover,
+a[class^="button"].button-warning:focus,
+button.button-warning:focus,
+input[type="submit"].button-warning:focus,
+input[type="reset"].button-warning:focus,
+input[type="button"].button-warning:focus {
+    background-color: var(--warning-dark);
+    border-color: var(--warning-dark);
+}
+
+a[class^="button"].button-danger,
+button.button-danger,
+input[type="submit"].button-danger,
+input[type="reset"].button-danger,
+input[type="button"].button-danger {
+    color: white;
+    background-color: var(--danger);
+    border-color: var(--danger);
+}
+
+a[class^="button"].button-danger:hover,
+button.button-danger:hover,
+input[type="submit"].button-danger:hover,
+input[type="reset"].button-danger:hover,
+input[type="button"].button-danger:hover,
+a[class^="button"].button-danger:focus,
+button.button-danger:focus,
+input[type="submit"].button-danger:focus,
+input[type="reset"].button-danger:focus,
+input[type="button"].button-danger:focus {
+    background-color: var(--danger-dark);
+    border-color: var(--danger-dark);
+}
+
+/* Social -------------------------------- */
+.social h1,
+.social h2,
+.social h3,
+.social h4,
+.social h5,
+.social h6 {
+    font-size: 1.6rem;
+    font-weight: normal;
+}
+
+.social a {
+    color: #FFF;
+}
+
+a.button-facebook {
+    background-color: #483D8B;
+    border-color: #483D8B;
+}
+
+a.button-twitter {
+    background-color: #6BA4FF;
+    border-color: #6BA4FF;
+}
+
+a.button-instagram {
+    background-color: #CD5C5C;
+    border-color: #CD5C5C;
+}
+
+/* Alert -------------------------------- */
+div[class^="alert"] {
+    color: #FFF;
+    width: 100%;
+    padding: .5rem;
+}
+.alert-info { background-color: var(--info); }
+.alert-success { background-color: var(--success); }
+.alert-warning { background-color: var(--warning); }
+.alert-danger { background-color: var(--danger); }
+
+.alert-title {
+    margin: 0;
+    padding-bottom: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: normal;
+}
+
+.alert-message {
+    margin: 0;
+    font-size: .9rem;
+    font-weight: lighter;
+}
+
+/* Chip -------------------------------- */
+.chip {
+    display: inline-block;
+    padding: 4px 8px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.4rem;
+    letter-spacing: 0.02rem;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: #DDD;
+    border: 1px solid #DDD;
+    border-radius: 2px;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+
+/* Hero -------------------------------- */
+.hero {
+    width: 100%;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+.hero h1 {
+    margin: 0;
+    font-size: 2.8rem;
+    font-weight: normal;
+}
+
+.hero h2 {
+    margin: 1rem 0;
+    color: var(--black);
+    font-size: 1.2rem;
+    font-weight: lighter;
+}
+
+/* Headline -------------------------------- */
+.headline {
+    border-bottom: 1px solid #DDD;
+}
+
+.headline h1,
+.headline h2,
+.headline h3,
+.headline h4,
+.headline h5,
+.headline h6 {
+    margin: 0;
+    font-size: 1.6rem;
+    font-weight: normal;
+}
+
+/* Info -------------------------------- */
+.info-secondary {
+    text-align: center;
+}
+
+.info a {
+    margin-bottom: 1rem;
+}
+
+/* Article -------------------------------- */
+.article {
+    height: 100%;
+    margin: 10px auto;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background: white;
+    border: 1px solid #DDD;
+    border-radius: 2px;
+}
+
+.article-image {
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+    justify-content: center;
+    align-items: center;
+    padding-right: 0;
+    padding-left: 0;
+    -webkit-box-flex: 1;
+    flex: 1 1 0;
+    min-width: 0;
+}
+
+.article-image img {
+    object-fit: cover;
+    width: 100%;
+    height: 70px;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+}
+
+.article-content {
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 5px 10px;
+    min-width: 0;
+    -webkit-box-flex: 0;
+    flex: 0 0 75%;
+    max-width: 75%;
+}
+
+.article-content h1,
+.article-content h2,
+.article-content h3,
+.article-content h4,
+.article-content h5,
+.article-content h6 {
+    font-size: 1.4rem;
+    font-weight: normal;
+}
+
+/* Stat -------------------------------- */
+.stat {
+    width: 100%;
+    box-sizing: border-box;
+    display: inline-block;
+    background: #FFF;
+    border: 1px solid #DDD;
+    border-radius: 2px;
+    padding: .5rem;
+}
+
+.stat-value {
+    margin: 0;
+    color: var(--black);
+    font-size: 1.8rem;
+    font-weight: normal;
+}
+
+.stat-label {
+    margin-top: .5rem;
+    margin-bottom: 0;
+    color: var(--grey);
+    font-size: 1rem;
+    font-weight: lighter;
+}
+
+/* Pricing -------------------------------- */
+.pricing {
+    box-sizing: border-box;
+    display: inline-block;
+    background: #FFF;
+    border: 1px solid #DDD;
+    border-radius: 2px;
+}
+
+.pricing .pricing-title {
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: normal;
+    margin: 0;
+    padding: 1rem 0;
+    background-color: #EEE;
+}
+
+.pricing-price {
+    font-size: 2.2rem;
+    text-align: center;
+}
+
+.pricing a {
+    text-align: center;
+}
+
+.pricing .pricing-features,
+.pricing a {
+    margin: 1rem;
+}
+
+/* Newsletter -------------------------------- */
+.newsletter {
+    width: 100%;
+    box-sizing: border-box;
+    display: inline-block;
+    background: #FFF;
+    padding: .5rem;
+}
+
+.newsletter-title {
+    margin: 0;
+    color: var(--black);
+    font-size: 1.6rem;
+    font-weight: normal;
+}
+
+.newsletter-subtitle {
+    margin: .5rem 0;
+    color: var(--grey);
+    font-size: 1rem;
+    font-weight: lighter;
+}
+
+/* Login -------------------------------- */
+.login {
+    width: 100%;
+    box-sizing: border-box;
+    display: inline-block;
+    background: #FFF;
+    border: 1px solid #DDD;
+    border-radius: 2px;
+    padding: 1rem;
+}
+
+.login h1 {
+    text-align: center;
+    color: var(--black);
+    font-size: 1.8rem;
+    font-weight: normal;
+}
+
+.login input[type="submit"] {
+    text-align: center;
+}

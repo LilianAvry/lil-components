@@ -1,12 +1,13 @@
 {
-  "name": "lil-components",
-  "version": "1.0.0",
-  "description": "A set of nice components built with Lil.css",
+  "name": "petit-ui",
+  "version": "1.0.0-beta.1",
+  "description": "A set of nice components built with petit.css",
   "main": "index.css",
   "scripts": {
     "build": "node index.js"
   },
   "keywords": [
+    "petit",
     "small",
     "lite",
     "light",
@@ -16,10 +17,12 @@
     "sheet",
     "stylesheet",
     "framework",
-    "lil",
     "web",
     "components"
   ],
   "author": "Lilian Avry Chrétienne",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "petit-css": "^1.0.0-beta.1"
+  }
 }

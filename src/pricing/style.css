@@ -1,17 +1,30 @@
-.lil-pricing .card-title {
+.lil-pricing {
+    box-sizing: border-box;
+    display: inline-block;
+    background: #FFF;
+    border: 1px solid #DDD;
+    border-radius: 2px;
+}
+
+.lil-pricing .lil-pricing-title {
     text-align: center;
+    font-size: 1.4rem;
+    font-weight: normal;
+    margin: 0;
+    padding: 1rem 0;
     background-color: #EEE;
 }
 
-.lil-pricing .card-actions {
-    text-align: center;
-}
-
-.lil-pricing_features {
-    margin: 1rem;
-}
-
-.lil-pricing_price {
+.lil-pricing-price {
     font-size: 2.2rem;
     text-align: center;
+}
+
+.lil-pricing a {
+    text-align: center;
+}
+
+.lil-pricing .lil-pricing-features,
+.lil-pricing a {
+    margin: 1rem;
 }

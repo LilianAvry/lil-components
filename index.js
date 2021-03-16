@@ -1,7 +1,7 @@
 const fs = require('fs');
-const lilPath = `${__dirname}/src/lil-components.css`;
+const petitPath = `${__dirname}/src/petit-ui.css`;
 
-fs.writeFileSync(lilPath, '');
+fs.writeFileSync(petitPath, '');
 
 function read (name, index) {
   const path = `${__dirname}/src/${name.toLowerCase()}/style.css`;
@@ -11,10 +11,10 @@ function read (name, index) {
     ? `/* ${name} -------------------------------- */\r\n`
     : `\r\n/* ${name} -------------------------------- */\r\n`;
   const data = comment + content;
-  fs.appendFileSync(lilPath, data);
+  fs.appendFileSync(petitPath, data);
 }
 
-const components = ['Info', 'Social'];
+const components = ['Colors', 'Buttons', 'Social', 'Alert', 'Chip', 'Hero', 'Headline', 'Info', 'Article', 'Stat', 'Pricing', 'Newsletter', 'Login'];
 
 for (let i = 0; i < components.length; i++) {
   read(components[i], i)

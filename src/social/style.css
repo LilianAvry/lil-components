@@ -1,18 +1,28 @@
-.lil-social .row .column a.button-secondary {
+.lil-social h1,
+.lil-social h2,
+.lil-social h3,
+.lil-social h4,
+.lil-social h5,
+.lil-social h6 {
+    font-size: 1.6rem;
+    font-weight: normal;
+}
+
+.lil-social a {
     color: #FFF;
 }
 
-a.button-secondary.lil-social_button__facebook {
+a.button-facebook {
     background-color: #483D8B;
     border-color: #483D8B;
 }
 
-a.button-secondary.lil-social_button__twitter {
+a.button-twitter {
     background-color: #6BA4FF;
     border-color: #6BA4FF;
 }
 
-a.button-secondary.lil-social_button__instagram {
+a.button-instagram {
     background-color: #CD5C5C;
     border-color: #CD5C5C;
 }

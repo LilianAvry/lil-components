@@ -1,4 +1,16 @@
 .npmignore
 index.js
 index.html
-src/info-block-primary
+src/alert
+src/article
+src/buttons
+src/chip
+src/colors
+src/headline
+src/hero
+src/info
+src/login
+src/newsletter
+src/pricing
+src/social
+src/stat
