@@ -1,7 +1,7 @@
 @import "../colors/style.css";
 @import "../buttons/style.css";
 
-.lil-login {
+.login {
     width: 100%;
     box-sizing: border-box;
     display: inline-block;
@@ -11,13 +11,13 @@
     padding: 1rem;
 }
 
-.lil-login h1 {
+.login h1 {
     text-align: center;
     color: var(--black);
     font-size: 1.8rem;
     font-weight: normal;
 }
 
-.lil-login input[type="submit"] {
+.login input[type="submit"] {
     text-align: center;
 }

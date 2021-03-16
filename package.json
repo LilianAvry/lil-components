@@ -1,6 +1,6 @@
 {
   "name": "petit-ui",
-  "version": "1.0.0-beta.0",
+  "version": "1.0.0-beta.1",
   "description": "A set of nice components built with petit.css",
   "main": "index.css",
   "scripts": {
@@ -23,6 +23,6 @@
   "author": "Lilian Avry Chrétienne",
   "license": "MIT",
   "dependencies": {
-    "@lilianavry/lil-css": "^1.0.0-beta.0"
+    "petit-css": "^1.0.0-beta.1"
   }
 }

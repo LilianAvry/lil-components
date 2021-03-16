@@ -1,6 +1,6 @@
 @import "../colors/style.css";
 
-.lil-newsletter {
+.newsletter {
     width: 100%;
     box-sizing: border-box;
     display: inline-block;
@@ -8,14 +8,14 @@
     padding: .5rem;
 }
 
-.lil-newsletter-title {
+.newsletter-title {
     margin: 0;
     color: var(--black);
     font-size: 1.6rem;
     font-weight: normal;
 }
 
-.lil-newsletter-subtitle {
+.newsletter-subtitle {
     margin: .5rem 0;
     color: var(--grey);
     font-size: 1rem;

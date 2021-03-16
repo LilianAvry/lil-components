@@ -1,6 +1,6 @@
 @import "../colors/style.css";
 
-.lil-stat {
+.stat {
     width: 100%;
     box-sizing: border-box;
     display: inline-block;
@@ -10,14 +10,14 @@
     padding: .5rem;
 }
 
-.lil-stat-value {
+.stat-value {
     margin: 0;
     color: var(--black);
     font-size: 1.8rem;
     font-weight: normal;
 }
 
-.lil-stat-label {
+.stat-label {
     margin-top: .5rem;
     margin-bottom: 0;
     color: var(--grey);

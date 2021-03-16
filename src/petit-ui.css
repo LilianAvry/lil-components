@@ -127,17 +127,17 @@ input[type="button"].button-danger:focus {
 }
 
 /* Social -------------------------------- */
-.lil-social h1,
-.lil-social h2,
-.lil-social h3,
-.lil-social h4,
-.lil-social h5,
-.lil-social h6 {
+.social h1,
+.social h2,
+.social h3,
+.social h4,
+.social h5,
+.social h6 {
     font-size: 1.6rem;
     font-weight: normal;
 }
 
-.lil-social a {
+.social a {
     color: #FFF;
 }
 
@@ -157,24 +157,24 @@ a.button-instagram {
 }
 
 /* Alert -------------------------------- */
-div[class^="lil-alert"] {
+div[class^="alert"] {
     color: #FFF;
     width: 100%;
     padding: .5rem;
 }
-.lil-alert-info { background-color: var(--info); }
-.lil-alert-success { background-color: var(--success); }
-.lil-alert-warning { background-color: var(--warning); }
-.lil-alert-danger { background-color: var(--danger); }
+.alert-info { background-color: var(--info); }
+.alert-success { background-color: var(--success); }
+.alert-warning { background-color: var(--warning); }
+.alert-danger { background-color: var(--danger); }
 
-.lil-alert-title {
+.alert-title {
     margin: 0;
     padding-bottom: 0.5rem;
     font-size: 1.2rem;
     font-weight: normal;
 }
 
-.lil-alert-message {
+.alert-message {
     margin: 0;
     font-size: .9rem;
     font-weight: lighter;
@@ -200,19 +200,19 @@ div[class^="lil-alert"] {
 
 
 /* Hero -------------------------------- */
-.lil-hero {
+.hero {
     width: 100%;
     box-sizing: border-box;
     display: inline-block;
 }
 
-.lil-hero h1 {
+.hero h1 {
     margin: 0;
     font-size: 2.8rem;
     font-weight: normal;
 }
 
-.lil-hero h2 {
+.hero h2 {
     margin: 1rem 0;
     color: var(--black);
     font-size: 1.2rem;
@@ -220,32 +220,32 @@ div[class^="lil-alert"] {
 }
 
 /* Headline -------------------------------- */
-.lil-headline {
+.headline {
     border-bottom: 1px solid #DDD;
 }
 
-.lil-headline h1,
-.lil-headline h2,
-.lil-headline h3,
-.lil-headline h4,
-.lil-headline h5,
-.lil-headline h6 {
+.headline h1,
+.headline h2,
+.headline h3,
+.headline h4,
+.headline h5,
+.headline h6 {
     margin: 0;
     font-size: 1.6rem;
     font-weight: normal;
 }
 
 /* Info -------------------------------- */
-.lil-info-secondary {
+.info-secondary {
     text-align: center;
 }
 
-.lil-info a {
+.info a {
     margin-bottom: 1rem;
 }
 
 /* Article -------------------------------- */
-.lil-article {
+.article {
     height: 100%;
     margin: 10px auto;
     display: flex;
@@ -258,7 +258,7 @@ div[class^="lil-alert"] {
     border-radius: 2px;
 }
 
-.lil-article-image {
+.article-image {
     display: flex;
     -webkit-box-pack: center;
     -webkit-box-align: center;
@@ -271,7 +271,7 @@ div[class^="lil-alert"] {
     min-width: 0;
 }
 
-.lil-article-image img {
+.article-image img {
     object-fit: cover;
     width: 100%;
     height: 70px;
@@ -279,7 +279,7 @@ div[class^="lil-alert"] {
     border-bottom-left-radius: 2px;
 }
 
-.lil-article-content {
+.article-content {
     margin-top: auto;
     margin-bottom: auto;
     padding: 5px 10px;
@@ -289,18 +289,18 @@ div[class^="lil-alert"] {
     max-width: 75%;
 }
 
-.lil-article-content h1,
-.lil-article-content h2,
-.lil-article-content h3,
-.lil-article-content h4,
-.lil-article-content h5,
-.lil-article-content h6 {
+.article-content h1,
+.article-content h2,
+.article-content h3,
+.article-content h4,
+.article-content h5,
+.article-content h6 {
     font-size: 1.4rem;
     font-weight: normal;
 }
 
 /* Stat -------------------------------- */
-.lil-stat {
+.stat {
     width: 100%;
     box-sizing: border-box;
     display: inline-block;
@@ -310,14 +310,14 @@ div[class^="lil-alert"] {
     padding: .5rem;
 }
 
-.lil-stat-value {
+.stat-value {
     margin: 0;
     color: var(--black);
     font-size: 1.8rem;
     font-weight: normal;
 }
 
-.lil-stat-label {
+.stat-label {
     margin-top: .5rem;
     margin-bottom: 0;
     color: var(--grey);
@@ -326,7 +326,7 @@ div[class^="lil-alert"] {
 }
 
 /* Pricing -------------------------------- */
-.lil-pricing {
+.pricing {
     box-sizing: border-box;
     display: inline-block;
     background: #FFF;
@@ -334,7 +334,7 @@ div[class^="lil-alert"] {
     border-radius: 2px;
 }
 
-.lil-pricing .lil-pricing-title {
+.pricing .pricing-title {
     text-align: center;
     font-size: 1.4rem;
     font-weight: normal;
@@ -343,22 +343,22 @@ div[class^="lil-alert"] {
     background-color: #EEE;
 }
 
-.lil-pricing-price {
+.pricing-price {
     font-size: 2.2rem;
     text-align: center;
 }
 
-.lil-pricing a {
+.pricing a {
     text-align: center;
 }
 
-.lil-pricing .lil-pricing-features,
-.lil-pricing a {
+.pricing .pricing-features,
+.pricing a {
     margin: 1rem;
 }
 
 /* Newsletter -------------------------------- */
-.lil-newsletter {
+.newsletter {
     width: 100%;
     box-sizing: border-box;
     display: inline-block;
@@ -366,14 +366,14 @@ div[class^="lil-alert"] {
     padding: .5rem;
 }
 
-.lil-newsletter-title {
+.newsletter-title {
     margin: 0;
     color: var(--black);
     font-size: 1.6rem;
     font-weight: normal;
 }
 
-.lil-newsletter-subtitle {
+.newsletter-subtitle {
     margin: .5rem 0;
     color: var(--grey);
     font-size: 1rem;
@@ -381,7 +381,7 @@ div[class^="lil-alert"] {
 }
 
 /* Login -------------------------------- */
-.lil-login {
+.login {
     width: 100%;
     box-sizing: border-box;
     display: inline-block;
@@ -391,13 +391,13 @@ div[class^="lil-alert"] {
     padding: 1rem;
 }
 
-.lil-login h1 {
+.login h1 {
     text-align: center;
     color: var(--black);
     font-size: 1.8rem;
     font-weight: normal;
 }
 
-.lil-login input[type="submit"] {
+.login input[type="submit"] {
     text-align: center;
 }
