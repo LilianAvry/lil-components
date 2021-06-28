@@ -23,6 +23,10 @@
   "author": "Lilian Avry Chrétienne",
   "license": "MIT",
   "dependencies": {
-    "petit-css": "^1.0.0-beta.1"
-  }
+    "petit-css": "^1.0.0-beta.3"
+  },
+  "bugs": {
+    "url": "https://github.com/LilianAvry/petit-ui/issues"
+  },
+  "homepage": "http://petitui.lil.re"
 }
