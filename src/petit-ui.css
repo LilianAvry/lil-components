@@ -29,6 +29,7 @@
 .background-danger-dark { background-color: var(--danger-dark); }
 
 /* Buttons -------------------------------- */
+@import "../colors/style.css";
 
 a[class^="button"].button-info,
 button.button-info,
@@ -127,17 +128,17 @@ input[type="button"].button-danger:focus {
 }
 
 /* Social -------------------------------- */
-.social h1,
-.social h2,
-.social h3,
-.social h4,
-.social h5,
-.social h6 {
+.lil-social h1,
+.lil-social h2,
+.lil-social h3,
+.lil-social h4,
+.lil-social h5,
+.lil-social h6 {
     font-size: 1.6rem;
     font-weight: normal;
 }
 
-.social a {
+.lil-social a {
     color: #FFF;
 }
 
@@ -157,6 +158,8 @@ a.button-instagram {
 }
 
 /* Alert -------------------------------- */
+@import "../colors/style.css";
+
 div[class^="alert"] {
     color: #FFF;
     width: 100%;
@@ -181,6 +184,8 @@ div[class^="alert"] {
 }
 
 /* Chip -------------------------------- */
+@import "../colors/style.css";
+
 .chip {
     display: inline-block;
     padding: 4px 8px;
@@ -200,6 +205,9 @@ div[class^="alert"] {
 
 
 /* Hero -------------------------------- */
+@import "../colors/style.css";
+@import "../buttons/style.css";
+
 .hero {
     width: 100%;
     box-sizing: border-box;
@@ -220,16 +228,16 @@ div[class^="alert"] {
 }
 
 /* Headline -------------------------------- */
-.headline {
+.lil-headline {
     border-bottom: 1px solid #DDD;
 }
 
-.headline h1,
-.headline h2,
-.headline h3,
-.headline h4,
-.headline h5,
-.headline h6 {
+.lil-headline h1,
+.lil-headline h2,
+.lil-headline h3,
+.lil-headline h4,
+.lil-headline h5,
+.lil-headline h6 {
     margin: 0;
     font-size: 1.6rem;
     font-weight: normal;
@@ -300,6 +308,8 @@ div[class^="alert"] {
 }
 
 /* Stat -------------------------------- */
+@import "../colors/style.css";
+
 .stat {
     width: 100%;
     box-sizing: border-box;
@@ -326,7 +336,7 @@ div[class^="alert"] {
 }
 
 /* Pricing -------------------------------- */
-.pricing {
+.lil-pricing {
     box-sizing: border-box;
     display: inline-block;
     background: #FFF;
@@ -334,7 +344,7 @@ div[class^="alert"] {
     border-radius: 2px;
 }
 
-.pricing .pricing-title {
+.lil-pricing .lil-pricing-title {
     text-align: center;
     font-size: 1.4rem;
     font-weight: normal;
@@ -343,21 +353,23 @@ div[class^="alert"] {
     background-color: #EEE;
 }
 
-.pricing-price {
+.lil-pricing-price {
     font-size: 2.2rem;
     text-align: center;
 }
 
-.pricing a {
+.lil-pricing a {
     text-align: center;
 }
 
-.pricing .pricing-features,
-.pricing a {
+.lil-pricing .lil-pricing-features,
+.lil-pricing a {
     margin: 1rem;
 }
 
 /* Newsletter -------------------------------- */
+@import "../colors/style.css";
+
 .newsletter {
     width: 100%;
     box-sizing: border-box;
@@ -381,6 +393,9 @@ div[class^="alert"] {
 }
 
 /* Login -------------------------------- */
+@import "../colors/style.css";
+@import "../buttons/style.css";
+
 .login {
     width: 100%;
     box-sizing: border-box;
