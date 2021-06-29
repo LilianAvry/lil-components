@@ -1,23 +1,23 @@
 @import "../colors/style.css";
 
-div[class^="lil-alert"] {
+div[class^="alert"] {
     color: #FFF;
     width: 100%;
     padding: .5rem;
 }
-.lil-alert-info { background-color: var(--info); }
-.lil-alert-success { background-color: var(--success); }
-.lil-alert-warning { background-color: var(--warning); }
-.lil-alert-danger { background-color: var(--danger); }
+.alert-info { background-color: var(--info); }
+.alert-success { background-color: var(--success); }
+.alert-warning { background-color: var(--warning); }
+.alert-danger { background-color: var(--danger); }
 
-.lil-alert-title {
+.alert-title {
     margin: 0;
     padding-bottom: 0.5rem;
     font-size: 1.2rem;
     font-weight: normal;
 }
 
-.lil-alert-message {
+.alert-message {
     margin: 0;
     font-size: .9rem;
     font-weight: lighter;
