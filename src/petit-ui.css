@@ -61,8 +61,8 @@ button.button-info:focus,
 input[type="submit"].button-info:focus,
 input[type="reset"].button-info:focus,
 input[type="button"].button-info:focus {
-    background-color: var(--info-dark);
-    border-color: var(--info-dark);
+    background-color: var(--info-darker);
+    border-color: var(--info-darker);
 }
 
 a[class^="button"].button-success,
@@ -85,8 +85,8 @@ button.button-success:focus,
 input[type="submit"].button-success:focus,
 input[type="reset"].button-success:focus,
 input[type="button"].button-success:focus {
-    background-color: var(--success-dark);
-    border-color: var(--success-dark);
+    background-color: var(--success-darker);
+    border-color: var(--success-darker);
 }
 
 a[class^="button"].button-warning,
@@ -109,8 +109,8 @@ button.button-warning:focus,
 input[type="submit"].button-warning:focus,
 input[type="reset"].button-warning:focus,
 input[type="button"].button-warning:focus {
-    background-color: var(--warning-dark);
-    border-color: var(--warning-dark);
+    background-color: var(--warning-darker);
+    border-color: var(--warning-darker);
 }
 
 a[class^="button"].button-danger,
@@ -133,8 +133,8 @@ button.button-danger:focus,
 input[type="submit"].button-danger:focus,
 input[type="reset"].button-danger:focus,
 input[type="button"].button-danger:focus {
-    background-color: var(--danger-dark);
-    border-color: var(--danger-dark);
+    background-color: var(--danger-darker);
+    border-color: var(--danger-darker);
 }
 
 /* Social -------------------------------- */
