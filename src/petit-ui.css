@@ -238,16 +238,33 @@ div[class^="alert"] {
 }
 
 /* Headline -------------------------------- */
-.lil-headline {
+.headline {
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
     border-bottom: 1px solid #DDD;
 }
 
-.lil-headline h1,
-.lil-headline h2,
-.lil-headline h3,
-.lil-headline h4,
-.lil-headline h5,
-.lil-headline h6 {
+.headline div {
+    flex: 0 0 auto;
+    flex-grow: 0;
+    box-sizing: border-box;
+    padding: .5rem;
+}
+
+.headline div:first-of-type {padding-left: 0;}
+.headline div:last-of-type {padding-right: 0;}
+
+.headline h1,
+.headline h2,
+.headline h3,
+.headline h4,
+.headline h5,
+.headline h6 {
     margin: 0;
     font-size: 1.6rem;
     font-weight: normal;
