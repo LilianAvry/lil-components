@@ -173,7 +173,6 @@ a.button-instagram {
 div[class^="alert"] {
     color: #FFF;
     width: 100%;
-    padding: .5rem;
 }
 .alert-info { background-color: var(--info); }
 .alert-success { background-color: var(--success); }
@@ -182,13 +181,14 @@ div[class^="alert"] {
 
 .alert-title {
     margin: 0;
-    padding-bottom: 0.5rem;
+    padding: 0.5rem;
     font-size: 1.2rem;
     font-weight: normal;
 }
 
 .alert-message {
     margin: 0;
+    padding: 0.5rem;
     font-size: .9rem;
     font-weight: lighter;
 }
