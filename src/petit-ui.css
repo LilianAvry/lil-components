@@ -250,6 +250,10 @@ div[class^="alert"] {
     font-weight: lighter;
 }
 
+.hero img {
+    max-width:100%;
+}
+
 /* Headline -------------------------------- */
 .headline {
     display: flex;
