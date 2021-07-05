@@ -288,12 +288,36 @@ div[class^="alert"] {
 }
 
 /* Info -------------------------------- */
+.info-primary,
 .info-secondary {
-    text-align: center;
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
 }
 
-.info a {
-    margin-bottom: 1rem;
+.info-primary-text,
+.info-primary-image,
+.info-secondary-item {
+    flex: 0 0 auto;
+    flex-grow: 0;
+    box-sizing: border-box;
+    padding: .5rem;
+}
+
+.info-primary-text,
+.info-primary-image {
+    flex-basis: 41.66666667%;
+    width: 41.66666667%;
+}
+
+.info-secondary-item {
+    flex-basis: 25%;
+    width: 25%;
+    text-align: center;
 }
 
 /* Article -------------------------------- */
