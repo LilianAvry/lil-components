@@ -405,15 +405,29 @@ div[class^="alert"] {
 }
 
 /* Pricing -------------------------------- */
-.lil-pricing {
+.pricing {
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: stretch;
+    align-content: stretch;
+}
+
+.pricing-item {
+    flex: 0 0 auto;
+    flex-grow: 0;
     box-sizing: border-box;
     display: inline-block;
     background: #FFF;
     border: 1px solid #DDD;
     border-radius: 2px;
+    flex-basis: 25%;
+    width: 25%;
 }
 
-.lil-pricing .lil-pricing-title {
+.pricing-header {
     text-align: center;
     font-size: 1.4rem;
     font-weight: normal;
@@ -422,19 +436,17 @@ div[class^="alert"] {
     background-color: #EEE;
 }
 
-.lil-pricing-price {
+.pricing-price {
     font-size: 2.2rem;
     text-align: center;
 }
 
-.lil-pricing a {
-    text-align: center;
-}
-
-.lil-pricing .lil-pricing-features,
-.lil-pricing a {
+.pricing-features,
+.pricing-footer {
     margin: 1rem;
 }
+
+.pricing-footer { text-align: center; }
 
 /* Newsletter -------------------------------- */
 @import "../colors/style.css";
