@@ -1,7 +1,8 @@
-.pricing-item {
+.pricing {
     background: #FFF;
     border: 1px solid #DDD;
     border-radius: 2px;
+    height: 100%;
 }
 
 .pricing-header {
