@@ -1,9 +1,6 @@
 @import "../colors/style.css";
 
 .stat {
-    width: 100%;
-    box-sizing: border-box;
-    display: inline-block;
     background: #FFF;
     border: 1px solid #DDD;
     border-radius: 2px;
