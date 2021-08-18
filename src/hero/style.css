@@ -1,25 +1,6 @@
 @import "../colors/style.css";
 @import "../buttons/style.css";
 
-.hero {
-    width: 100%;
-    box-sizing: border-box;
-    display: flex;
-    display: -webkit-flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    align-content: center;
-}
-
-.hero div {
-    flex: 0 0 auto;
-    flex-grow: 0;
-    box-sizing: border-box;
-    padding: .5rem;
-}
-
 .hero h1 {
     margin: 0;
     font-size: 2.8rem;
