@@ -1,3 +1,6 @@
+@import "./colors/style.css";
+@import "./colors/style.css";
+
 /* Colors -------------------------------- */
 * {
     --black: #1a1a1a;
@@ -39,8 +42,6 @@
 .background-danger-lighter { background-color: var(--danger-lighter); }
 
 /* Buttons -------------------------------- */
-@import "../colors/style.css";
-
 a[class^="button"].button-info,
 button.button-info,
 input[type="submit"].button-info,
@@ -168,8 +169,6 @@ a.button-instagram {
 }
 
 /* Alert -------------------------------- */
-@import "../colors/style.css";
-
 div[class^="alert"] {
     color: #FFF;
     width: 100%;
@@ -194,8 +193,6 @@ div[class^="alert"] {
 }
 
 /* Chip -------------------------------- */
-@import "../colors/style.css";
-
 .chip {
     display: inline-block;
     padding: 4px 8px;
@@ -215,28 +212,6 @@ div[class^="alert"] {
 
 
 /* Hero -------------------------------- */
-@import "../colors/style.css";
-@import "../buttons/style.css";
-
-.hero {
-    width: 100%;
-    box-sizing: border-box;
-    display: flex;
-    display: -webkit-flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    align-content: center;
-}
-
-.hero div {
-    flex: 0 0 auto;
-    flex-grow: 0;
-    box-sizing: border-box;
-    padding: .5rem;
-}
-
 .hero h1 {
     margin: 0;
     font-size: 2.8rem;
@@ -256,25 +231,8 @@ div[class^="alert"] {
 
 /* Headline -------------------------------- */
 .headline {
-    display: flex;
-    display: -webkit-flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    align-content: center;
     border-bottom: 1px solid #DDD;
 }
-
-.headline div {
-    flex: 0 0 auto;
-    flex-grow: 0;
-    box-sizing: border-box;
-    padding: .5rem;
-}
-
-.headline div:first-of-type {padding-left: 0;}
-.headline div:last-of-type {padding-right: 0;}
 
 .headline h1,
 .headline h2,
@@ -288,37 +246,6 @@ div[class^="alert"] {
 }
 
 /* Info -------------------------------- */
-.info-primary,
-.info-secondary {
-    display: flex;
-    display: -webkit-flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    align-content: center;
-}
-
-.info-primary-text,
-.info-primary-image,
-.info-secondary-item {
-    flex: 0 0 auto;
-    flex-grow: 0;
-    box-sizing: border-box;
-    padding: .5rem;
-}
-
-.info-primary-text,
-.info-primary-image {
-    flex-basis: 41.66666667%;
-    width: 41.66666667%;
-}
-
-.info-secondary-item {
-    flex-basis: 25%;
-    width: 25%;
-    text-align: center;
-}
 
 /* Article -------------------------------- */
 .article {
@@ -377,12 +304,7 @@ div[class^="alert"] {
 }
 
 /* Stat -------------------------------- */
-@import "../colors/style.css";
-
 .stat {
-    width: 100%;
-    box-sizing: border-box;
-    display: inline-block;
     background: #FFF;
     border: 1px solid #DDD;
     border-radius: 2px;
@@ -406,25 +328,10 @@ div[class^="alert"] {
 
 /* Pricing -------------------------------- */
 .pricing {
-    display: flex;
-    display: -webkit-flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: stretch;
-    align-content: stretch;
-}
-
-.pricing-item {
-    flex: 0 0 auto;
-    flex-grow: 0;
-    box-sizing: border-box;
-    display: inline-block;
     background: #FFF;
     border: 1px solid #DDD;
     border-radius: 2px;
-    flex-basis: 25%;
-    width: 25%;
+    height: 100%;
 }
 
 .pricing-header {
@@ -449,8 +356,6 @@ div[class^="alert"] {
 .pricing-footer { text-align: center; }
 
 /* Newsletter -------------------------------- */
-@import "../colors/style.css";
-
 .newsletter {
     width: 100%;
     box-sizing: border-box;
@@ -474,9 +379,6 @@ div[class^="alert"] {
 }
 
 /* Login -------------------------------- */
-@import "../colors/style.css";
-@import "../buttons/style.css";
-
 .login {
     width: 100%;
     box-sizing: border-box;
@@ -484,7 +386,6 @@ div[class^="alert"] {
     background: #FFF;
     border: 1px solid #DDD;
     border-radius: 2px;
-    padding: 1rem;
 }
 
 .login h1 {
