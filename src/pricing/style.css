@@ -1,23 +1,7 @@
-.pricing {
-    display: flex;
-    display: -webkit-flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: stretch;
-    align-content: stretch;
-}
-
 .pricing-item {
-    flex: 0 0 auto;
-    flex-grow: 0;
-    box-sizing: border-box;
-    display: inline-block;
     background: #FFF;
     border: 1px solid #DDD;
     border-radius: 2px;
-    flex-basis: 25%;
-    width: 25%;
 }
 
 .pricing-header {
