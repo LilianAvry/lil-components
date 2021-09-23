@@ -1,6 +1,6 @@
 {
   "name": "petit-ui",
-  "version": "1.0.0-beta.1",
+  "version": "1.0.0-beta.2",
   "description": "A set of nice components built with petit.css",
   "main": "index.css",
   "scripts": {
@@ -23,7 +23,7 @@
   "author": "Lilian Avry Chrétienne",
   "license": "MIT",
   "dependencies": {
-    "petit-css": "^1.0.0-beta.4"
+    "petit-css": "^1.0.0-beta.5"
   },
   "bugs": {
     "url": "https://github.com/LilianAvry/petit-ui/issues"
