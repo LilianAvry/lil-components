@@ -1,4 +1,5 @@
-.npmignore
+.idea
+.gitignore
 index.js
 index.html
 src/alert
