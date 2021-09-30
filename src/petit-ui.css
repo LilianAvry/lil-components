@@ -1,7 +1,6 @@
 /* Colors -------------------------------- */
 * {
     --black: #1a1a1a;
-    --grey: #BBB;
     --info: #00BCD4;
     --info-darker: #00ACC1;
     --info-lighter: #26C6DA;
@@ -195,7 +194,7 @@ div[class^="alert"] {
 
 .chip {
     display: inline-block;
-    padding: 4px 8px;
+    padding: 0px 8px;
     text-align: center;
     font-weight: 400;
     font-size: 1rem;
@@ -208,7 +207,10 @@ div[class^="alert"] {
     border-radius: 20px;
     outline: 0;
     box-sizing: border-box;
+    cursor: pointer;
 }
+
+.chip:hover { background-color: #DDD }
 
 
 /* Hero -------------------------------- */
