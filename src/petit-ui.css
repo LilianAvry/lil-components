@@ -39,7 +39,6 @@
 .background-danger-lighter { background-color: var(--danger-lighter); }
 
 /* Buttons -------------------------------- */
-@import "../colors/style.css";
 
 a[class^="button"].button-info,
 button.button-info,
@@ -168,7 +167,6 @@ a.button-instagram {
 }
 
 /* Alert -------------------------------- */
-@import "../colors/style.css";
 
 div[class^="alert"] {
     color: #FFF;
@@ -194,7 +192,6 @@ div[class^="alert"] {
 }
 
 /* Chip -------------------------------- */
-@import "../colors/style.css";
 
 .chip {
     display: inline-block;
@@ -215,8 +212,6 @@ div[class^="alert"] {
 
 
 /* Hero -------------------------------- */
-@import "../colors/style.css";
-@import "../buttons/style.css";
 
 .hero h1 {
     margin: 0;
@@ -310,7 +305,6 @@ div[class^="alert"] {
 }
 
 /* Stat -------------------------------- */
-@import "../colors/style.css";
 
 .stat {
     background: #FFF;
@@ -364,7 +358,6 @@ div[class^="alert"] {
 .pricing-footer { text-align: center; }
 
 /* Newsletter -------------------------------- */
-@import "../colors/style.css";
 
 .newsletter {
     width: 100%;
@@ -389,8 +382,6 @@ div[class^="alert"] {
 }
 
 /* Login -------------------------------- */
-@import "../colors/style.css";
-@import "../buttons/style.css";
 
 .login {
     width: 100%;
