@@ -385,22 +385,3 @@ div[class^="alert"] {
 
 /* Login -------------------------------- */
 
-.login {
-    width: 100%;
-    box-sizing: border-box;
-    display: inline-block;
-    background: #FFF;
-    border: 1px solid #DDD;
-    border-radius: 2px;
-}
-
-.login h1 {
-    text-align: center;
-    color: var(--black);
-    font-size: 1.8rem;
-    font-weight: normal;
-}
-
-.login input[type="submit"] {
-    text-align: center;
-}
