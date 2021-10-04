@@ -1,10 +1,14 @@
 {
   "name": "petit-ui",
   "version": "1.0.0-beta.2",
-  "description": "A set of nice components built with petit.css",
+  "description": "Minimalist components and website templates built with petit.css",
   "main": "index.css",
   "scripts": {
     "build": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lil-re/petit-ui.git"
   },
   "keywords": [
     "petit",
@@ -18,7 +22,8 @@
     "stylesheet",
     "framework",
     "web",
-    "components"
+    "components",
+    "templates"
   ],
   "author": "Lilian Avry Chrétienne",
   "license": "MIT",
@@ -26,7 +31,7 @@
     "petit-css": "1.0.0-beta.7"
   },
   "bugs": {
-    "url": "https://github.com/LilianAvry/petit-ui/issues"
+    "url": "https://github.com/lil-re/petit-ui/issues"
   },
   "homepage": "http://petitui.lil.re"
 }
