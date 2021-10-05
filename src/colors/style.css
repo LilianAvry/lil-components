@@ -22,16 +22,14 @@
 .text-danger { color: var(--danger); }
 
 .background-info { background-color: var(--info); }
-.background-success { background-color: var(--success); }
-.background-warning { background-color: var(--warning); }
-.background-danger { background-color: var(--danger); }
-
 .background-info-darker { background-color: var(--info-darker); }
-.background-success-darker { background-color: var(--success-darker); }
-.background-warning-darker { background-color: var(--warning-darker); }
-.background-danger-darker { background-color: var(--danger-darker); }
-
 .background-info-lighter { background-color: var(--info-lighter); }
+.background-success { background-color: var(--success); }
+.background-success-darker { background-color: var(--success-darker); }
 .background-success-lighter { background-color: var(--success-lighter); }
+.background-warning { background-color: var(--warning); }
+.background-warning-darker { background-color: var(--warning-darker); }
 .background-warning-lighter { background-color: var(--warning-lighter); }
+.background-danger { background-color: var(--danger); }
+.background-danger-darker { background-color: var(--danger-darker); }
 .background-danger-lighter { background-color: var(--danger-lighter); }
