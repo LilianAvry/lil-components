@@ -1,6 +1,7 @@
 const fs = require('fs');
 
 class Build {
+  petitPath = `${__dirname}/src/petit-ui.css`
   options = { encoding:'utf8', flag:'r' }
   components = [
     'Colors',
@@ -16,10 +17,6 @@ class Build {
     'Newsletter',
     'Footer'
   ]
-
-  constructor () {
-    this.petitPath = `${__dirname}/src/petit-ui.css`;
-  }
 
   static main () {
     const builder = new Build()
