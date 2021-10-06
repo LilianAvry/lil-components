@@ -1,26 +1,75 @@
 const fs = require('fs');
-const petitPath = `${__dirname}/src/petit-ui.css`;
 
-fs.writeFileSync(petitPath, '');
+class Build {
+  options = { encoding:'utf8', flag:'r' }
+  components = [
+    'Colors',
+    'Buttons',
+    'Alert',
+    'Chip',
+    'Hero',
+    'Headline',
+    'Call-to-action',
+    'Article',
+    'Stat',
+    'Pricing',
+    'Newsletter',
+    'Footer'
+  ]
 
-function read (name, index) {
-  const path = `${__dirname}/src/${name.toLowerCase()}/style.css`;
-  const options = { encoding:'utf8', flag:'r' };
-  const content = fs.readFileSync(path, options);
-  const lines = content.split('\n')
-  const finalContent = lines
-    .filter(line => !line.includes('@import'))
-    .join('\n')
-  const comment = index === 0
-    ? `/* ${name} -------------------------------- */\r\n`
-    : `\r\n/* ${name} -------------------------------- */\r\n`;
+  constructor () {
+    this.petitPath = `${__dirname}/src/petit-ui.css`;
+  }
 
-  const data = comment + finalContent;
-  fs.appendFileSync(petitPath, data);
+  static main () {
+    const builder = new Build()
+    builder.openTargetFile().readComponents()
+  }
+
+  openTargetFile () {
+    fs.writeFileSync(this.petitPath, '');
+    return this
+  }
+
+  readComponents () {
+    for (let i = 0; i < this.components.length; i++) {
+      this.readComponent(this.components[i], i)
+    }
+  }
+
+  readComponent (name, index) {
+    const filePath = this.getFilePath(name)
+    const fileContent = this.getFileContent(filePath)
+    const formattedContent = this.getFormattedContent(fileContent)
+    const fileComment = this.getFileComment(name, index)
+    this.setTarget(fileComment, formattedContent)
+  }
+
+  getFilePath (name) {
+    return `${__dirname}/src/${name.toLowerCase()}/style.css`;
+  }
+
+  getFileContent (path) {
+    return fs.readFileSync(path, this.options);
+  }
+
+  getFormattedContent (content) {
+    return content
+      .split('\n')
+      .filter(line => !line.includes('@import'))
+      .join('\n')
+  }
+
+  getFileComment (name, index) {
+    return index === 0
+      ? `/* ${name} -------------------------------- */\r\n`
+      : `\r\n/* ${name} -------------------------------- */\r\n`;
+  }
+
+  setTarget (comment, finalContent) {
+    const data = comment + finalContent;
+    fs.appendFileSync(this.petitPath, data);
+  }
 }
 
-const components = ['Colors', 'Buttons', 'Alert', 'Chip', 'Hero', 'Headline', 'Call-to-action', 'Article', 'Stat', 'Pricing', 'Newsletter', 'Footer'];
-
-for (let i = 0; i < components.length; i++) {
-  read(components[i], i)
-}
+Build.main()
