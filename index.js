@@ -6,7 +6,7 @@ class Build {
   components = [
     'Colors',
     'Buttons',
-    'Sausage',
+    'Sausage-links',
     'Alert',
     'Chip',
     'Hero',

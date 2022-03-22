@@ -1,5 +1,7 @@
 @import "../colors/style.css";
 
+/* https://tdarb.org/blog/hamburger-menu-alternative.html */
+
 .sausage-links { position: relative; }
 
 .sausage-links ul {
