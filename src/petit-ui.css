@@ -133,7 +133,9 @@ input[type="button"].button-danger:focus {
     border-color: var(--danger-darker);
 }
 
-/* Sausage -------------------------------- */
+/* Sausage-links -------------------------------- */
+
+/* https://tdarb.org/blog/hamburger-menu-alternative.html */
 
 .sausage-links { position: relative; }
 
@@ -342,6 +344,7 @@ div[class^="alert"] {
     border: 1px solid #DDD;
     border-radius: 2px;
     height: 100%;
+    position: relative;
 }
 
 .pricing-header {
@@ -358,12 +361,17 @@ div[class^="alert"] {
     text-align: center;
 }
 
-.pricing-features,
-.pricing-footer {
-    margin: 1rem;
-}
+.pricing-features{ margin: 1rem  1rem 5rem 1rem; }
 
-.pricing-footer { text-align: center; }
+.pricing-footer { margin: 1rem; }
+
+.pricing-footer {
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
 
 /* Newsletter -------------------------------- */
 
