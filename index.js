@@ -1,5 +1,5 @@
 const fs = require('fs');
-const petitPath = `${__dirname}/src/petit-ui.css`;
+const petitPath = `${__dirname}/src/petit-components.css`;
 
 fs.writeFileSync(petitPath, '');
 
