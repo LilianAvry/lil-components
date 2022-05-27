@@ -347,6 +347,12 @@ div[class^="alert"] {
     position: relative;
 }
 
+.pricing.best-pricing {
+    background: var(--primary);
+    color: #FFF;
+    border: 1px solid var(--primary-darker);
+}
+
 .pricing-header {
     text-align: center;
     font-size: 1.4rem;
@@ -356,12 +362,27 @@ div[class^="alert"] {
     background-color: #EEE;
 }
 
+.best-pricing .pricing-header { background-color: var(--primary-darker);}
+
 .pricing-price {
     font-size: 2.2rem;
     text-align: center;
 }
 
-.pricing-features{ margin: 1rem  1rem 5rem 1rem; }
+.pricing-features{
+    margin: 1rem 1rem 5rem 1rem;
+    list-style: none;
+    padding-left: 0;
+}
+
+.pricing-features li {
+    padding: .6rem 1rem;
+    border-bottom: 1px solid #DDD;
+}
+
+.best-pricing .pricing-features li { border-bottom: 1px solid var(--primary-lighter); }
+
+.pricing-features li:last-of-type { border: none; }
 
 .pricing-footer { margin: 1rem; }
 
