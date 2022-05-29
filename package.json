@@ -27,7 +27,7 @@
   "author": "Lilian Avry Chrétienne",
   "license": "MIT",
   "dependencies": {
-    "petit-css": "^1.0.0-beta.10"
+    "petit-css": "^1.0.0-beta.11"
   },
   "bugs": {
     "url": "https://github.com/lil-re/petit-css-components/issues"
