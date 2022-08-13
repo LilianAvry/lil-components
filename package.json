@@ -1,6 +1,6 @@
 {
-  "name": "petit-css-components",
-  "version": "1.0.0-beta.2",
+  "name": "petit-ui",
+  "version": "1.0.0-beta.3",
   "description": "Minimalist components built with petit.css",
   "main": "index.css",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lil-re/petit-css-components.git"
+    "url": "git+https://github.com/lil-re/petit-ui.git"
   },
   "keywords": [
     "petit",
@@ -30,7 +30,7 @@
     "petit-css": "^1.0.0-beta.11"
   },
   "bugs": {
-    "url": "https://github.com/lil-re/petit-css-components/issues"
+    "url": "https://github.com/lil-re/petit-ui/issues"
   },
   "homepage": "http://components.petitcss.lil.re"
 }
