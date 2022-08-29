@@ -24,13 +24,13 @@
     "web",
     "components"
   ],
-  "author": "Lilian Avry Chrétienne",
+  "author": "Lil.re",
   "license": "MIT",
   "dependencies": {
-    "petit-css": "^1.0.0-beta.11"
+    "petit-css": "^1.0.0-beta.12"
   },
   "bugs": {
     "url": "https://github.com/lil-re/petit-css-components/issues"
   },
-  "homepage": "http://components.petitcss.lil.re"
+  "homepage": "http://petitui.lil.re"
 }

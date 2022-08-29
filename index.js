@@ -1,7 +1,7 @@
 const fs = require('fs');
 
 class Build {
-  petitPath = `${__dirname}/src/petit-components.css`
+  petitPath = `${__dirname}/src/petit-ui.css`
   options = { encoding:'utf8', flag:'r' }
   components = [
     'Colors',
