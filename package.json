@@ -1,36 +1,6 @@
 {
-  "name": "petit-ui",
-  "version": "1.0.0-beta.3",
-  "description": "Minimalist components built with petit.css",
-  "main": "index.css",
-  "scripts": {
-    "build": "node index.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/lil-re/petit-ui.git"
-  },
-  "keywords": [
-    "petit",
-    "small",
-    "lite",
-    "light",
-    "lightweight",
-    "css",
-    "style",
-    "sheet",
-    "stylesheet",
-    "framework",
-    "web",
-    "components"
-  ],
-  "author": "Lil.re",
-  "license": "MIT",
   "dependencies": {
-    "petit-css": "^1.0.0-beta.12"
-  },
-  "bugs": {
-    "url": "https://github.com/lil-re/petit-ui/issues"
-  },
-  "homepage": "https://petitui.lil.re"
+    "ejs": "^3.1.8",
+    "fs-extra": "^10.1.0"
+  }
 }

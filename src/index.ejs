@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Petit UI, a minimalist and lightweight UI library made with Petit CSS." />
+    <meta name="google-site-verification" content="_jxoy1waJ6vskl4ygVWulhS62yr8qhNMP43UWrUxi1c" />
+
+    <title>Petit UI</title>
+
+    <link rel="stylesheet" href="./assets/css/normalize.css">
+    <link rel="stylesheet" href="./assets/css/petit.css">
+    <link rel="stylesheet" href="./assets/css/petit-components.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <style>
+        .container section.row {padding-top: 100px;}
+        .sample-grid .row div[class^="column"] {
+            padding-top: .5rem;
+            padding-bottom: .5rem;
+        }
+    </style>
+</head>
+<body>
+    <%- include('layout/menu'); %>
+
+    <div class="container">
+        <%- include('layout/intro'); %>
+        <%- include('components/alerts'); %>
+        <%- include('components/articles'); %>
+        <%- include('components/buttons'); %>
+        <%- include('components/callToActions'); %>
+        <%- include('components/chips'); %>
+        <%- include('components/colors'); %>
+        <%- include('components/headlines'); %>
+        <%- include('components/heros'); %>
+        <%- include('components/infos'); %>
+        <%- include('components/login'); %>
+        <%- include('components/register'); %>
+        <%- include('components/newsletters'); %>
+        <%- include('components/pricing'); %>
+        <%- include('components/sausageLinks'); %>
+        <%- include('components/stats'); %>
+    </div>
+
+    <%- include('layout/footer'); %>
+</body>
+</html>

@@ -1,0 +1,442 @@
+/* Colors -------------------------------- */
+* {
+    --black: #1a1a1a;
+    --info: #00BCD4;
+    --info-darker: #00ACC1;
+    --info-lighter: #26C6DA;
+    --success: #8BC34A;
+    --success-darker: #7CB342;
+    --success-lighter: #9CCC65;
+    --warning: #FF9800;
+    --warning-darker: #FB8C00;
+    --warning-lighter: #FFA726;
+    --danger: #F44336;
+    --danger-darker: #E53935;
+    --danger-lighter: #EF5350;
+}
+
+.text-white { color: #FFF; }
+.text-black { color: var(--black)}
+.text-info { color: var(--info); }
+.text-success { color: var(--success); }
+.text-warning { color: var(--warning); }
+.text-danger { color: var(--danger); }
+
+.background-info { background-color: var(--info); }
+.background-info-darker { background-color: var(--info-darker); }
+.background-info-lighter { background-color: var(--info-lighter); }
+.background-success { background-color: var(--success); }
+.background-success-darker { background-color: var(--success-darker); }
+.background-success-lighter { background-color: var(--success-lighter); }
+.background-warning { background-color: var(--warning); }
+.background-warning-darker { background-color: var(--warning-darker); }
+.background-warning-lighter { background-color: var(--warning-lighter); }
+.background-danger { background-color: var(--danger); }
+.background-danger-darker { background-color: var(--danger-darker); }
+.background-danger-lighter { background-color: var(--danger-lighter); }
+
+/* Buttons -------------------------------- */
+
+a[class^="button"].button-info,
+button.button-info,
+input[type="submit"].button-info,
+input[type="reset"].button-info,
+input[type="button"].button-info {
+    color: white;
+    background-color: var(--info);
+    border-color: var(--info);
+}
+
+a[class^="button"].button-info:hover,
+button.button-info:hover,
+input[type="submit"].button-info:hover,
+input[type="reset"].button-info:hover,
+input[type="button"].button-info:hover,
+a[class^="button"].button-info:focus,
+button.button-info:focus,
+input[type="submit"].button-info:focus,
+input[type="reset"].button-info:focus,
+input[type="button"].button-info:focus {
+    background-color: var(--info-darker);
+    border-color: var(--info-darker);
+}
+
+a[class^="button"].button-success,
+button.button-success,
+input[type="submit"].button-success,
+input[type="reset"].button-success,
+input[type="button"].button-success {
+    color: white;
+    background-color: var(--success);
+    border-color: var(--success);
+}
+
+a[class^="button"].button-success:hover,
+button.button-success:hover,
+input[type="submit"].button-success:hover,
+input[type="reset"].button-success:hover,
+input[type="button"].button-success:hover,
+a[class^="button"].button-success:focus,
+button.button-success:focus,
+input[type="submit"].button-success:focus,
+input[type="reset"].button-success:focus,
+input[type="button"].button-success:focus {
+    background-color: var(--success-darker);
+    border-color: var(--success-darker);
+}
+
+a[class^="button"].button-warning,
+button.button-warning,
+input[type="submit"].button-warning,
+input[type="reset"].button-warning,
+input[type="button"].button-warning {
+    color: white;
+    background-color: var(--warning);
+    border-color: var(--warning);
+}
+
+a[class^="button"].button-warning:hover,
+button.button-warning:hover,
+input[type="submit"].button-warning:hover,
+input[type="reset"].button-warning:hover,
+input[type="button"].button-warning:hover,
+a[class^="button"].button-warning:focus,
+button.button-warning:focus,
+input[type="submit"].button-warning:focus,
+input[type="reset"].button-warning:focus,
+input[type="button"].button-warning:focus {
+    background-color: var(--warning-darker);
+    border-color: var(--warning-darker);
+}
+
+a[class^="button"].button-danger,
+button.button-danger,
+input[type="submit"].button-danger,
+input[type="reset"].button-danger,
+input[type="button"].button-danger {
+    color: white;
+    background-color: var(--danger);
+    border-color: var(--danger);
+}
+
+a[class^="button"].button-danger:hover,
+button.button-danger:hover,
+input[type="submit"].button-danger:hover,
+input[type="reset"].button-danger:hover,
+input[type="button"].button-danger:hover,
+a[class^="button"].button-danger:focus,
+button.button-danger:focus,
+input[type="submit"].button-danger:focus,
+input[type="reset"].button-danger:focus,
+input[type="button"].button-danger:focus {
+    background-color: var(--danger-darker);
+    border-color: var(--danger-darker);
+}
+
+/* Sausage-links -------------------------------- */
+
+/* https://tdarb.org/blog/hamburger-menu-alternative.html */
+
+.sausage-links { position: relative; }
+
+.sausage-links ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: auto;
+    padding: 1em 0;
+    -webkit-overflow-scrolling: touch;
+}
+
+.sausage-links li {
+    padding: 0 5px;
+    white-space: nowrap;
+}
+
+.sausage-links a, .sausage-links a:visited {
+    border: 1px solid var(--accent);
+    border-radius: 50px;
+    color: var(--primary);
+    background-color: var(--accent);
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 4px 12px;
+    text-decoration: none;
+}
+
+.sausage-links a:hover {
+    border: 1px solid var(--accent-darker);
+    background-color: var(--accent-darker);
+}
+
+/* Alert -------------------------------- */
+
+div[class^="alert"] {
+    color: #FFF;
+    width: 100%;
+}
+.alert-info { background-color: var(--info); }
+.alert-success { background-color: var(--success); }
+.alert-warning { background-color: var(--warning); }
+.alert-danger { background-color: var(--danger); }
+
+.alert-title {
+    margin: 0;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: normal;
+}
+
+.alert-message {
+    margin: 0;
+    padding: 0.5rem;
+    font-size: .9rem;
+    font-weight: lighter;
+}
+
+/* Chip -------------------------------- */
+
+.chip {
+    display: inline-block;
+    padding: 0px 8px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.4rem;
+    letter-spacing: 0.02rem;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: #EEE;
+    border: 1px solid #DDD;
+    border-radius: 20px;
+    outline: 0;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.chip:hover { background-color: #DDD }
+
+
+/* Hero -------------------------------- */
+
+.hero h1 {
+    margin: 0;
+    font-size: 2.8rem;
+    font-weight: normal;
+}
+
+.hero h2 {
+    margin: 1rem 0;
+    color: var(--black);
+    font-size: 1.2rem;
+    font-weight: lighter;
+}
+
+.hero img {
+    max-width:100%;
+}
+
+/* Headline -------------------------------- */
+.headline {
+    border-bottom: 1px solid #DDD;
+}
+
+.headline h1,
+.headline h2,
+.headline h3,
+.headline h4,
+.headline h5,
+.headline h6 {
+    margin: 0;
+    font-weight: normal;
+}
+
+/* Call-to-action -------------------------------- */
+.call-to-action {
+    border: 1px solid #CCC;
+    border-radius: 2px;
+}
+
+/* Article -------------------------------- */
+.article {
+    height: 100%;
+    margin: 10px auto;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background: white;
+    border: 1px solid #DDD;
+    border-radius: 2px;
+}
+
+.article-image {
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+    justify-content: center;
+    align-items: center;
+    padding-right: 0;
+    padding-left: 0;
+    -webkit-box-flex: 2;
+    flex: 1 1 0;
+    min-width: 0;
+}
+
+.article-image img {
+    object-fit: cover;
+    width: 100%;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+}
+
+.article-content {
+    margin-top: auto;
+    margin-bottom: auto;
+    min-width: 0;
+    -webkit-box-flex: 0;
+    flex: 0 0 75%;
+    max-width: 75%;
+}
+
+.article-title {
+    font-size: 1.4rem;
+    font-weight: normal;
+    margin: .5rem;
+}
+
+.article-subtitle {
+    font-size: 1.0rem;
+    font-weight: lighter;
+    margin: .5rem;
+    color: #999999;
+}
+
+/* Stat -------------------------------- */
+
+.stat {
+    background: #FFF;
+    border: 1px solid #DDD;
+    border-radius: 2px;
+    padding: .5rem;
+}
+
+.stat-value {
+    margin: 0;
+    color: var(--black);
+    font-size: 1.8rem;
+    font-weight: normal;
+}
+
+.stat-label {
+    margin-top: .5rem;
+    margin-bottom: 0;
+    color: var(--grey);
+    font-size: 1rem;
+    font-weight: lighter;
+}
+
+/* Pricing -------------------------------- */
+.pricing {
+    background: #FFF;
+    border: 1px solid #DDD;
+    border-radius: 2px;
+    height: 100%;
+    position: relative;
+}
+
+.pricing.best-pricing {
+    background: var(--primary);
+    color: #FFF;
+    border: 1px solid var(--primary-darker);
+}
+
+.pricing-header {
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: normal;
+    margin: 0;
+    padding: 1rem 0;
+    background-color: #EEE;
+}
+
+.best-pricing .pricing-header { background-color: var(--primary-darker);}
+
+.pricing-price {
+    font-size: 2.2rem;
+    text-align: center;
+}
+
+.pricing-features{
+    margin: 1rem 1rem 5rem 1rem;
+    list-style: none;
+    padding-left: 0;
+}
+
+.pricing-features li {
+    padding: .6rem 1rem;
+    border-bottom: 1px solid #DDD;
+}
+
+.best-pricing .pricing-features li { border-bottom: 1px solid var(--primary-lighter); }
+
+.pricing-features li:last-of-type { border: none; }
+
+.pricing-footer { margin: 1rem; }
+
+.pricing-footer {
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+/* Newsletter -------------------------------- */
+
+.newsletter {
+    width: 100%;
+    box-sizing: border-box;
+    display: inline-block;
+    background: #FFF;
+    padding: .5rem;
+}
+
+.newsletter-title {
+    margin: 0;
+    color: var(--black);
+    font-size: 1.6rem;
+    font-weight: normal;
+}
+
+.newsletter-subtitle {
+    margin: .5rem 0;
+    color: var(--grey);
+    font-size: 1rem;
+    font-weight: lighter;
+}
+
+/* Footer -------------------------------- */
+footer { padding: 20px 0; }
+
+footer h4 {
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+}
+
+footer ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 0;
+}
+
+footer li { margin-bottom: 10px; }
+
+footer a {
+    color: #333;
+    text-decoration: none;
+}
+
+footer a:hover { color: #222; }

@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Petit UI, a minimalist and lightweight UI library made with Petit CSS." />
+    <meta name="google-site-verification" content="_jxoy1waJ6vskl4ygVWulhS62yr8qhNMP43UWrUxi1c" />
+
+    <title>Petit UI</title>
+
+    <link rel="stylesheet" href="./assets/css/normalize.css">
+    <link rel="stylesheet" href="./assets/css/petit.css">
+    <link rel="stylesheet" href="./assets/css/petit-components.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <style>
+        .container section.row {padding-top: 100px;}
+        .sample-grid .row div[class^="column"] {
+            padding-top: .5rem;
+            padding-bottom: .5rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="navigation">
+    <a href="http://petitui.lil.re" class="logo">Petit UI</a>
+    <input class="menu-button" type="checkbox" id="menu-button" />
+    <label class="menu-icon" for="menu-button">
+        <span class="icon"></span>
+    </label>
+    <ul class="menu">
+        <li><a href="https://github.com/lil-re/petit-ui">Github</a></li>
+        <li><a href="http://petitcss.lil.re">Petit CSS</a></li>
+    </ul>
+</div>
+
+
+    <div class="container">
+        <section class="row">
+    <div class="column-12 text-center">
+        <h1>Petit UI</h1>
+        <p>A minimalist UI library</p>
+        <a class="button-secondary" href="https://github.com/lil-re/petit-ui">View on Github</a>
+        <a class="button-primary" href="https://github.com/lil-re/petit-ui/releases/tag/1.0.0-beta.0">Download</a>
+    </div>
+    <div class="column-6">
+        <h1>What is Petit UI ?</h1>
+        <p>
+            <strong>Petit UI</strong> is a lightweight UI library made with <a href="https://github.com/lil-re/petit-css" class="link">Petit.css</a>
+            for building small projects without using a larger framework.
+        </p>
+    </div>
+    <div class="column-6">
+        <h1>Installation</h1>
+        <p>
+            You can <a href="https://github.com/lil-re/petit-css/releases/tag/1.0.0-beta.0" class="link">download Petit UI from Github</a>.
+            You can also add it to your projects with Npm or Yarn :
+        </p>
+        <p><pre><code>
+  # npm
+  npm install petit-ui
+
+  # yarn
+  yarn add petit-ui
+
+</code></pre></p>
+    </div>
+</section>
+
+        <section id="alert" class="row">
+    <div class="column-12">
+        <h1>Alerts</h1>
+    </div>
+    <div class="column-12">
+        <div class="alert-info">
+            <h3 class="alert-title">
+                Info
+            </h3>
+            <p class="alert-message">
+                Lorem ipsum dolor sit amet.
+            </p>
+        </div>
+    </div>
+    <div class="column-12">
+        <div class="alert-success">
+            <h3 class="alert-title">
+                Success
+            </h3>
+            <p class="alert-message">
+                Lorem ipsum dolor sit amet.
+            </p>
+        </div>
+    </div>
+    <div class="column-12">
+        <div class="alert-warning">
+            <h3 class="alert-title">
+                Warning
+            </h3>
+            <p class="alert-message">
+                Lorem ipsum dolor sit amet.
+            </p>
+        </div>
+    </div>
+    <div class="column-12">
+        <div class="alert-danger">
+            <h3 class="alert-title">
+                Danger
+            </h3>
+            <p class="alert-message">
+                Lorem ipsum dolor sit amet.
+            </p>
+        </div>
+    </div>
+    <div class="column-12">
+          <pre><code>
+&ltdiv class="alert-info"&gt
+  &lth3 class="alert-title"&gt
+    Info
+  &lt/h3&gt
+  &ltp class="alert-message"&gt
+    Lorem ipsum dolor sit amet.
+  &lt/p&gt
+&lt/div&gt
+          </code></pre>
+    </div>
+</section>
+
+        <section id="article" class="row">
+    <div class="column-12">
+        <h1>Articles</h1>
+    </div>
+    <div class="column-12">
+        <div class="article">
+            <div class="article-image">
+                <img src="https://outwardhound.com/furtropolis/wp-content/uploads/2020/03/Doggo-Lingo-Post.jpg" alt="doggo">
+            </div>
+            <div class="article-content">
+                <h1 class="article-title">Lorem ipsum</h1>
+                <h1 class="article-subtitle">Lorem ipsum dolor sit Amet</h1>
+            </div>
+        </div>
+        <div class="article">
+            <div class="article-image">
+                <img src="https://outwardhound.com/furtropolis/wp-content/uploads/2020/03/Doggo-Lingo-Post.jpg" alt="doggo">
+            </div>
+            <div class="article-content">
+                <h1 class="article-title">Lorem ipsum</h1>
+                <h1 class="article-subtitle">Lorem ipsum dolor sit Amet</h1>
+            </div>
+        </div>
+        <div class="article">
+            <div class="article-image">
+                <img src="https://outwardhound.com/furtropolis/wp-content/uploads/2020/03/Doggo-Lingo-Post.jpg" alt="doggo">
+            </div>
+            <div class="article-content">
+                <h1 class="article-title">Lorem ipsum</h1>
+                <h1 class="article-subtitle">Lorem ipsum dolor sit Amet</h1>
+            </div>
+        </div>
+    </div>
+    <div class="column-12">
+          <pre><code>
+&ltdiv class="article"&gt
+  &ltdiv class="article-image"&gt
+    &ltimg src="https://outwardhound.com/furtropolis/wp-content/uploads/2020/03/Doggo-Lingo-Post.jpg"&gt
+  &lt/div&gt
+  &ltdiv class="article-content"&gt
+    &lth1 class="article-title"&gtLorem ipsum&lt/h1&gt
+    &lth1 class="article-subtitle"&gtLorem ipsum dolor sit Amet&lt/h1&gt
+  &lt/div&gt
+&lt/div&gt
+          </code></pre>
+    </div>
+</section>
+
+        <section id="button" class="row">
+    <div class="column-12">
+        <h1>Buttons</h1>
+        <p>
+            Petit UI comes with basic buttons types : <mark>primary</mark>, <mark>secondary</mark>,
+            <mark>info</mark>, <mark>success</mark>, <mark>danger</mark>, <mark>warning</mark>.
+            Buttons styles can be applied to <mark>&lt;a&gt;</mark>, <mark>&lt;button&gt;</mark> and <mark>&lt;input type="submit"&gt;</mark> elements.
+        </p>
+    </div>
+    <div class="column-12">
+        <a class="button-primary" href="#">Primary</a>
+        <a class="button-secondary" href="#">Secondary</a>
+        <a class="button-info" href="#">Info</a>
+        <a class="button-success" href="#">Success</a>
+        <a class="button-danger" href="#">Danger</a>
+        <a class="button-warning" href="#">Warning</a>
+    </div>
+    <div class="column-12">
+          <pre><code>
+&lta class="button-primary" href="#"&gtPrimary&lt/a&gt
+&lta class="button-secondary" href="#"&gtSecondary&lt/a&gt
+&lta class="button-info" href="#"&gtInfo&lt/a&gt
+&lta class="button-success" href="#"&gtSuccess&lt/a&gt
+&lta class="button-danger" href="#"&gtDanger&lt/a&gt
+&lta class="button-warning" href="#"&gtWarning&lt/a&gt
+          </code></pre>
+    </div>
+</section>
+
+        <section id="chip" class="row">
+    <div class="column-12">
+        <h1>Call to action</h1>
+        <div class="call-to-action row justify-center items-center">
+            <div class="column-5 text-left">
+                <h2>Place your headline here</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <div class="column-5">
+                <form action="">
+                    <div class="row justify-end">
+                        <div class="column-6">
+                            <input type="email" id="call-to-action__email-input" placeholder="Your email">
+                        </div>
+                        <div class="column-4">
+                            <input class="button-primary" type="submit" value="Submit">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="column-12">
+          <pre><code>
+&ltdiv class="call-to-action row justify-center items-center"&gt
+  &ltdiv class="column-5 text-left"&gt
+    &lth2&gtPlace your headline here&lt/h2&gt
+    &ltp&gtLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt/p&gt
+  &lt/div&gt
+  &ltdiv class="column-5"&gt
+    &ltform action=""&gt
+      &ltdiv class="row justify-end"&gt
+        &ltdiv class="column-6"&gt
+          &ltinput type="email" id="email-input" placeholder="Your email"&gt
+        &lt/div&gt
+        &ltdiv class="column-4"&gt
+          &ltinput class="button-primary" type="submit" value="Submit"&gt
+        &lt/div&gt
+      &lt/div&gt
+    &lt/form&gt
+  &lt/div&gt
+&lt/div&gt
+          </code></pre>
+    </div>
+</section>
+
+        <section id="chip" class="row">
+    <div class="column-12">
+        <h1>Chip</h1>
+    </div>
+    <div class="column-12">
+        <p>
+            Lorem ipsum <div class="chip">dolor</div> sit amet !
+        </p>
+    </div>
+    <div class="column-12">
+          <pre><code>
+Lorem ipsum &ltspan class="chip"&gtdolor&lt/span&gt sit amet !
+          </code></pre>
+    </div>
+</section>
+
+        <section id="color" class="row">
+    <div class="column-12">
+        <h1>Color</h1>
+        <p>
+            There are 4 basic colors : <mark>info</mark>, <mark>success</mark>, <mark>danger</mark>, <mark>warning</mark>.
+        </p>
+    </div>
+    <div class="column-12 sample-grid">
+        <div class="row">
+            <div class="column-4 text-white background-info-lighter">info lighter</div>
+            <div class="column-4 text-white background-info">info</div>
+            <div class="column-4 text-white background-info-darker">info darker</div>
+            <div class="column-4 text-white background-success-lighter">success lighter</div>
+            <div class="column-4 text-white background-success">success</div>
+            <div class="column-4 text-white background-success-darker">success darker</div>
+            <div class="column-4 text-white background-warning-lighter">warning lighter</div>
+            <div class="column-4 text-white background-warning">warning</div>
+            <div class="column-4 text-white background-warning-darker">warning darker</div>
+            <div class="column-4 text-white background-danger-lighter">danger lighter</div>
+            <div class="column-4 text-white background-danger">danger</div>
+            <div class="column-4 text-white background-danger-darker">danger darker</div>
+        </div>
+    </div>
+</section>
+
+        <section id="headline" class="row">
+    <div class="column-12">
+        <h1>Headline</h1>
+    </div>
+    <div class="column-12">
+        <div class="headline row justify-between">
+            <div class="column">
+                <h2>
+                    Place your headline here
+                </h2>
+            </div>
+            <div class="column">
+                <a href="#" class="button-info">
+                    Some link
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="column-12">
+          <pre><code>
+&ltdiv class="headline"&gt
+  &ltdiv&gt
+    &lth2&gt
+      Place your headline here
+    &lt/h2&gt
+  &lt/div&gt
+  &ltdiv&gt
+    &lta href="#" class="button-info"&gt
+      Some link
+    &lt/a&gt
+  &lt/div&gt
+&lt/div&gt
+          </code></pre>
+    </div>
+</section>
+
+        <section id="hero" class="row">
+    <div class="column-12">
+        <h1>Hero</h1>
+    </div>
+    <div class="column-12">
+        <div class="hero row justify-around items-center">
+            <div class="column-5">
+                <h1>
+                    Your amazing product landing page
+                </h1>
+                <h2>
+                    Write a short description of your product or service. And add a button.
+                </h2>
+                <a href="#" class="button-info">
+                    Get started
+                </a>
+            </div>
+            <div class="column-5 text-right">
+                <img src="https://placekitten.com/600/400" alt="placekitten">
+            </div>
+        </div>
+    </div>
+    <div class="column-12">
+          <pre><code>
+&ltdiv class="hero"&gt
+  &ltdiv class="column-5"&gt
+    &lth1&gt
+      Your amazing product landing page
+    &lt/h1&gt
+    &lth2&gt
+      Write a short description of your product or service. And add a button.
+    &lt/h2&gt
+    &lta href="#" class="button-info"&gt
+      Get started
+    &lt/a&gt
+  &lt/div&gt
+  &ltdiv class="column-5 text-right"&gt
+    &ltimg src="https://placekitten.com/600/400"&gt
+  &lt/div&gt
+&lt/div&gt
+          </code></pre>
+    </div>
+</section>
+
+        <section id="info" class="row">
+    <div class="column-12">
+        <h1>Info</h1>
+    </div>
+    <div class="column-12">
+        <div class="row justify-around">
+            <div class="column-5">
+                <h2>
+                    Your title here
+                </h2>
+                <p>
+                    Place your text here. It can be a description of your product or service. It can also be a presentation of your company or your team. Do not hesitate to markup <strong>main keywords</strong> to improve your SEO.
+                </p>
+                <a class="button-primary" href="#">
+                    Some link
+                </a>
+            </div>
+            <div class="column-5">
+                <img src="https://placekitten.com/600/400" alt="placekitten" class="lil-info-image">
+            </div>
+        </div>
+
+        <div class="row justify-around">
+            <div class="column-3 text-center">
+                <h2>
+                    Your title here
+                </h2>
+                <p>
+                    Place your text here. It can be a description of your product or service. It can also be a presentation of your company or your team. Do not hesitate to markup <strong>main keywords</strong> to improve your SEO.
+                </p>
+                <a class="button-secondary" href="#">
+                    Some link
+                </a>
+            </div>
+            <div class="column-3 text-center">
+                <h2>
+                    Your title here
+                </h2>
+                <p>
+                    Place your text here. It can be a description of your product or service. It can also be a presentation of your company or your team. Do not hesitate to markup <strong>main keywords</strong> to improve your SEO.
+                </p>
+                <a class="button-secondary" href="#">
+                    Some link
+                </a>
+            </div>
+            <div class="column-3 text-center">
+                <h2>
+                    Your title here
+                </h2>
+                <p>
+                    Place your text here. It can be a description of your product or service. It can also be a presentation of your company or your team. Do not hesitate to markup <strong>main keywords</strong> to improve your SEO.
+                </p>
+                <a class="button-secondary" href="#">
+                    Some link
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="column-12">
+          <pre><code>
+&ltdiv class="info-primary"&gt
+  &ltdiv class="info-primary-text"&gt
+    &lth2&gt
+      Your title here
+    &lt/h2&gt
+    &ltp&gt
+      Place your text here. It can be a description of your product or service. It can also be a presentation of your company or your team. Do not hesitate to markup &ltstrong&gtmain keywords&lt/strong&gt to improve your SEO.
+    &lt/p&gt
+    &lta class="button-primary" href="#"&gt
+      Some link
+    &lt/a&gt
+  &lt/div&gt
+  &ltdiv class="info-primary-image"&gt
+    &ltimg src="" alt="" class="lil-info-image"&gt
+  &lt/div&gt
+&lt/div&gt
+
+&ltdiv class="info-secondary"&gt
+  &ltdiv class="info-secondary-item"&gt
+    &lth2&gt
+      Your title here
+    &lt/h2&gt
+    &ltp&gt
+      Place your text here. It can be a description of your product or service. It can also be a presentation of your company or your team. Do not hesitate to markup &ltstrong&gtmain keywords&lt/strong&gt to improve your SEO.
+    &lt/p&gt
+    &lta class="button-secondary" href="#"&gt
+      Some link
+    &lt/a&gt
+  &lt/div&gt
+&lt/div&gt
+          </code></pre>
+    </div>
+</section>
+
+        <section id="login" class="row">
+    <div class="column-12">
+        <h1>Login</h1>
+    </div>
+    <div class="column-12">
+        <div class="row items-stretch content-stretch justify-center">
+            <div class="column-6">
+                <div class="login">
+                    <form action="">
+                        <div class="row">
+                            <div class="column-12 text-center">
+                                <h3>Login</h3>
+                            </div>
+                            <div class="column-12">
+                                <label for="email-input">Email</label>
+                                <input type="email" id="login__email-input">
+                            </div>
+                            <div class="column-12">
+                                <label for="password-input">Password</label>
+                                <input type="password" id="password-input">
+                            </div>
+                            <div class="column-12 text-center">
+                                <input type="submit" value="Login" class="button-primary">
+                                <p>You do not have an account ? <a href="#" class="link">Signup !</a></p>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="column-12">
+          <pre><code>
+&ltdiv class="login"&gt
+  &ltform action=""&gt
+    &ltdiv class="row"&gt
+      &ltdiv class="column-12 text-center"&gt
+        &lth3&gtLogin&lt/h3&gt
+      &lt/div&gt
+      &ltdiv class="column-12"&gt
+        &ltlabel for="email-input"&gtEmail&lt/label&gt
+        &ltinput type="email" id="email-input"&gt
+      &lt/div&gt
+      &ltdiv class="column-12"&gt
+        &ltlabel for="password-input"&gtPassword&lt/label&gt
+        &ltinput type="password" id="password-input"&gt
+      &lt/div&gt
+      &ltdiv class="column-12 text-center"&gt
+        &ltinput type="submit" value="Login" class="button-primary"&gt
+        &ltp&gtYou do not have an account ? &lta href="#" class="link"&gtSignup !&lt/a&gt&lt/p&gt
+      &lt/div&gt
+    &lt/div&gt
+  &lt/form&gt
+&lt/div&gt
+          </code></pre>
+    </div>
+</section>
+
+        <section id="register" class="row">
+    <div class="column-12">
+        <h1>Register</h1>
+    </div>
+    <div class="column-12">
+        <div class="row items-stretch content-stretch justify-center">
+            <div class="column-6">
+                <div class="login">
+                    <form action="">
+                        <div class="row">
+                            <div class="column-12 text-center">
+                                <h3>Register</h3>
+                            </div>
+                            <div class="column-12">
+                                <label for="username-input">Username</label>
+                                <input type="text" id="username-input">
+                            </div>
+                            <div class="column-12">
+                                <label for="email-input">Email</label>
+                                <input type="email" id="register__email-input">
+                            </div>
+                            <div class="column-12">
+                                <label for="password-input">Password</label>
+                                <input type="password" id="password-input">
+                            </div>
+                            <div class="column-12">
+                                <label for="repeat-password-input">Repeat password</label>
+                                <input type="password" id="repeat-password-input">
+                            </div>
+                            <div class="column-12">
+                                <label for="agree-input">I agree with terms and conditions</label>
+                                <input type="checkbox" id="agree-input">
+                            </div>
+                            <div class="column-12 text-center">
+                                <input type="submit" value="Register" class="button-primary">
+                                <p>You already have an account ? <a href="#" class="link">Login !</a></p>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="column-12">
+          <pre><code>
+&ltdiv class="login"&gt
+  &ltform action=""&gt
+    &ltdiv class="row"&gt
+      &ltdiv class="column-12 text-center"&gt
+        &lth3&gtRegister&lt/h3&gt
+      &lt/div&gt
+      &ltdiv class="column-12"&gt
+        &ltlabel for="username-input"&gtUsername&lt/label&gt
+        &ltinput type="text" id="username-input"&gt
+      &lt/div&gt
+      &ltdiv class="column-12"&gt
+        &ltlabel for="email-input"&gtEmail&lt/label&gt
+        &ltinput type="email" id="email-input"&gt
+      &lt/div&gt
+      &ltdiv class="column-12"&gt
+        &ltlabel for="password-input"&gtPassword&lt/label&gt
+        &ltinput type="password" id="password-input"&gt
+      &lt/div&gt
+      &ltdiv class="column-12"&gt
+        &ltlabel for="repeat-password-input"&gtRepeat password&lt/label&gt
+        &ltinput type="password" id="repeat-password-input"&gt
+      &lt/div&gt
+      &ltdiv class="column-12"&gt
+        &ltlabel for="agree-input"&gtI agree with terms and conditions&lt/label&gt
+        &ltinput type="checkbox" id="agree-input"&gt
+      &lt/div&gt
+      &ltdiv class="column-12 text-center"&gt
+        &ltinput type="submit" value="Register" class="button-primary"&gt
+        &ltp&gtYou already have an account ? &lta href="#" class="link"&gtLogin !&lt/a&gt&lt/p&gt
+      &lt/div&gt
+    &lt/div&gt
+  &lt/form&gt
+&lt/div&gt
+          </code></pre>
+    </div>
+</section>
+
+        <section id="newsletter" class="row">
+    <div class="column-12">
+        <h1>Newsletters</h1>
+    </div>
+    <div class="column-12">
+        <div class="row items-stretch content-stretch justify-center">
+            <div class="newsletter">
+                <form action="">
+                    <div class="row">
+                        <div class="column-12">
+                            <h2 class="newsletter-title">
+                                Subscribe !
+                            </h2>
+                            <p class="newsletter-subtitle">
+                                Enter your email to get our latest news in your mailbox.
+                            </p>
+                        </div>
+                        <div class="column">
+                            <input type="email" id="newsletters__email-input" placeholder="Your email">
+                        </div>
+                        <div class="column">
+                            <input class="button-primary" type="submit" value="Submit">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="column-12">
+          <pre><code>
+ &ltdiv class="newsletter"&gt
+  &ltform action=""&gt
+    &ltdiv class="row"&gt
+      &ltdiv class="column-12"&gt
+        &lth2 class="newsletter-title"&gt
+          Subscribe !
+        &lt/h2&gt
+        &ltp class="newsletter-subtitle"&gt
+          Enter your email to get our latest news in your mailbox.
+        &lt/p&gt
+      &lt/div&gt
+      &ltdiv class="column"&gt
+        &ltinput type="email" id="email-input" placeholder="Your email"&gt
+      &lt/div&gt
+      &ltdiv class="column"&gt
+        &ltinput class="button-primary" type="submit" value="Submit"&gt
+      &lt/div&gt
+    &lt/div&gt
+  &lt/form&gt
+&lt/div&gt
+          </code></pre>
+    </div>
+</section>
+
+        <section id="pricing" class="row">
+    <div class="column-12">
+        <h1>Pricing</h1>
+    </div>
+    <div class="column-12">
+        <div class="row items-stretch content-stretch justify-center">
+            <div class="column-3">
+                <article class="pricing">
+                    <h1 class="pricing-header">
+                        Small
+                    </h1>
+                    <h3 class="pricing-price">
+                        9$
+                    </h3>
+                    <ul class="pricing-features">
+                        <li>Feature 1</li>
+                        <li>Feature 2</li>
+                        <li>Feature 3</li>
+                    </ul>
+                    <div class="pricing-footer">
+                        <a class="button button-primary" href="#">Chose this plan</a>
+                    </div>
+                </article>
+            </div>
+
+            <div class="column-3">
+                <article class="pricing best-pricing">
+                    <h1 class="pricing-header">
+                        Medium
+                    </h1>
+                    <h3 class="pricing-price">
+                        19$
+                    </h3>
+                    <ul class="pricing-features">
+                        <li>Feature 1</li>
+                        <li>Feature 2</li>
+                        <li>Feature 3</li>
+                        <li>Feature 4</li>
+                        <li>Feature 5</li>
+                    </ul>
+                    <div class="pricing-footer">
+                        <a class="button button-secondary" href="#">Chose this plan</a>
+                    </div>
+                </article>
+            </div>
+
+            <div class="column-3">
+                <article class="pricing">
+                    <h1 class="pricing-header">
+                        Large
+                    </h1>
+                    <h3 class="pricing-price">
+                        39$
+                    </h3>
+                    <ul class="pricing-features">
+                        <li>Feature 1</li>
+                        <li>Feature 2</li>
+                        <li>Feature 3</li>
+                        <li>Feature 4</li>
+                        <li>Feature 5</li>
+                        <li>Feature 6</li>
+                        <li>Feature 7</li>
+                    </ul>
+                    <div class="pricing-footer">
+                        <a class="button button-primary" href="#">Chose this plan</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </div>
+    <div class="column-12">
+          <pre><code>
+&ltdiv class="row items-stretch content-stretch justify-center"&gt
+  &ltdiv class="column-3"&gt
+    &ltarticle class="pricing"&gt
+      &lth1 class="pricing-header"&gt
+        Small
+      &lt/h1&gt
+      &lth3 class="pricing-price"&gt
+        9$
+      &lt/h3&gt
+      &ltul class="pricing-features"&gt
+        &ltli&gtFeature 1&lt/li&gt
+        &ltli&gtFeature 2&lt/li&gt
+        &ltli&gtFeature 3&lt/li&gt
+      &lt/ul&gt
+      &ltdiv class="pricing-footer"&gt
+        &lta class="button button-primary" href="#"&gtChose this plan&lt/a&gt
+      &lt/div&gt
+    &lt/article&gt
+  &lt/div&gt
+
+  &ltdiv class="column-3"&gt
+    &ltarticle class="pricing best-pricing"&gt
+      &lth1 class="pricing-header"&gt
+        Medium
+      &lt/h1&gt
+      &lth3 class="pricing-price"&gt
+        19$
+      &lt/h3&gt
+      &ltul class="pricing-features"&gt
+        &ltli&gtFeature 1&lt/li&gt
+        &ltli&gtFeature 2&lt/li&gt
+        &ltli&gtFeature 3&lt/li&gt
+        &ltli&gtFeature 4&lt/li&gt
+        &ltli&gtFeature 5&lt/li&gt
+      &lt/ul&gt
+      &ltdiv class="pricing-footer"&gt
+        &lta class="button button-secondary" href="#"&gtChose this plan&lt/a&gt
+      &lt/div&gt
+    &lt/article&gt
+  &lt/div&gt
+
+  &ltdiv class="column-3"&gt
+    &ltarticle class="pricing"&gt
+      &lth1 class="pricing-header"&gt
+        Large
+      &lt/h1&gt
+      &lth3 class="pricing-price"&gt
+        39$
+      &lt/h3&gt
+      &ltul class="pricing-features"&gt
+        &ltli&gtFeature 1&lt/li&gt
+        &ltli&gtFeature 2&lt/li&gt
+        &ltli&gtFeature 3&lt/li&gt
+        &ltli&gtFeature 4&lt/li&gt
+        &ltli&gtFeature 5&lt/li&gt
+        &ltli&gtFeature 6&lt/li&gt
+        &ltli&gtFeature 7&lt/li&gt
+      &lt/ul&gt
+      &ltdiv class="pricing-footer"&gt
+        &lta class="button button-primary" href="#"&gtChose this plan&lt/a&gt
+      &lt/div&gt
+    &lt/article&gt
+  &lt/div&gt
+&lt/div&gt
+          </code></pre>
+    </div>
+</section>
+
+        <section id="hero" class="row">
+    <div class="column-12">
+        <h1>Sausage links</h1>
+    </div>
+    <div class="column-12">
+        <div class="hero row justify-around items-center">
+            <div class="column-12">
+                <nav class="sausage-links">
+                    <ul>
+                        <li><a href="">Homepage</a></li>
+                        <li><a href="">Categories</a></li>
+                        <li><a href="">Filter Properties</a></li>
+                        <li><a href="">Edit Optional Tags</a></li>
+                        <li><a href="">Research Papers</a></li>
+                        <li><a href="">Contact Our Team</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div class="column-12">
+          <pre><code>
+&gtnav class="sausage-links"&lt
+    &gtul&lt
+        &gtli&lt&gta href=""&ltHomepage&gt/a&lt&gt/li&lt
+        &gtli&lt&gta href=""&ltCategories&gt/a&lt&gt/li&lt
+        &gtli&lt&gta href=""&ltFilter Properties&gt/a&lt&gt/li&lt
+        &gtli&lt&gta href=""&ltEdit Optional Tags&gt/a&lt&gt/li&lt
+        &gtli&lt&gta href=""&ltResearch Papers&gt/a&lt&gt/li&lt
+        &gtli&lt&gta href=""&ltContact Our Team&gt/a&lt&gt/li&lt
+    &gt/ul&lt
+&gt/nav&lt
+          </code></pre>
+    </div>
+</section>
+
+        <section id="hero" class="row">
+    <div class="column-12">
+        <h1>Stats</h1>
+    </div>
+    <div class="column-12">
+        <div class="row">
+            <div class="column-3">
+                <div class="stat">
+                    <h2 class="stat-value">
+                        $1,458.42
+                    </h2>
+                    <p class="stat-label">
+                        Invoiced amount this week
+                    </p>
+                </div>
+            </div>
+            <div class="column-3">
+                <div class="stat">
+                    <h2 class="stat-value">
+                        $1,458.42
+                    </h2>
+                    <p class="stat-label">
+                        Invoiced amount this week
+                    </p>
+                </div>
+            </div>
+            <div class="column-3">
+                <div class="stat">
+                    <h2 class="stat-value">
+                        $1,458.42
+                    </h2>
+                    <p class="stat-label">
+                        Invoiced amount this week
+                    </p>
+                </div>
+            </div>
+            <div class="column-3">
+                <div class="stat">
+                    <h2 class="stat-value">
+                        $1,458.42
+                    </h2>
+                    <p class="stat-label">
+                        Invoiced amount this week
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="column-12">
+          <pre><code>
+&gtdiv class="stat"&lt
+    &gth2 class="stat-value"&lt
+        $1,458.42
+    &gt/h2&lt
+    &gtp class="stat-label"&lt
+        Invoiced amount this week
+    &gt/p&lt
+&gt/div&lt
+          </code></pre>
+    </div>
+</section>
+
+    </div>
+
+    <section id="footer" class="row justify-center">
+    <div class="column-12 text-center">
+        <h3>Petit UI</h3>
+    </div>
+    <div class="column">
+        <a class="button-secondary" href="https://github.com/lil-re/petit-ui">Github</a>
+        <a class="button-secondary" href="https://github.com/lil-re/petit-ui/releases/tag/1.0.0-beta.3">Download</a>
+        <a class="button-secondary" href="http://petitcss.lil.re">Petit CSS</a>
+        <a class="button-secondary" href="http://lil.re">lil.re</a>
+    </div>
+</section>
+
+</body>
+</html>
